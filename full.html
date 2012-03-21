@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+	 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<title>Good Fellaz :: Baltimore's nightlife professionals</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/home.css" />
+	<link type="text/css" rel="stylesheet" href="css/menu.css" />
+	<link type="text/css" rel="stylesheet" href="content-rotator/css/jquery.jscrollpane.css" />
+	<link type="text/css" rel="stylesheet" href="content-rotator/css/style.css" />
+
+	
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js" ></script>
+	<script type="text/javascript" src="js/jqModal.js" ></script>
+	<script type="text/javascript" src="content-rotator/js/jquery.crotator.js" ></script>
+	<script type="text/javascript" src="content-rotator/js/jquery.easing.1.3.js" ></script>
+	<script type="text/javascript" src="content-rotator/js/jquery.jscrollpane.min.js" ></script>
+	<script type="text/javascript" src="content-rotator/js/jquery.mousewheel.js" ></script>
+
+		
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/globalnav.js" ></script>
+	<script type="text/javascript">
+	$().ready(function() {
+		$('#cr-container').crotator({
+			// slideshow on
+			autoplay 			: true,
+			// slideshow interval
+			slideshow_interval 	: 6000,
+			// if true the thumbs will be shown initially
+			openThumbs			: true,
+			// speed that the thumbs are shown / hidden
+			toggleThumbsSpeed	: 300
+		});
+		
+
+	  $('#rsvp').jqm({ ajax: './rsvp.html', trigger: 'a.rsvpTrigger1', closeClass: 'closeWrapper'});
+  
+
+	});
+	</script>
+	
+  </head>
+  <body>
+  
+  
+    <div id="mainContainer">
+		<div id="banner">			
+			<div id="banner-emblem">
+				<img src="images/good-fellaz-trans.png" alt="Good Fellaz"/>				
+			</div>
+			
+		</div>
+		<div id="menu">
+			<nav id="globalheader" class="globalheader-js globalheader-loaded">
+				<ul id="globalnav" class="nosearch" role="navigation">
+					<li id="menu-home"><a href="full.html" ><span>Home</span></a></li>
+					<li id="menu-events"><a href="events.html" ><span>Events</span></a></li>					
+					<li id="menu-gallery"><a href="gallery.html" ><span>Gallery</span></a></li>
+					<li id="menu-videos"><a href="./video.html"><span>Videos</span></a></li>
+					<li id="menu-philanthropy"><a class="philanthropyTrigger" href="#" ><span>Philanthropy</span></a></li>
+					<li id="menu-about"><a href="team.html" ><span>About Us</span></a></li>					
+					<li id="menu-contact"><a class="contactUsTrigger" href="#"><span>Contact Us</span></a></li>				
+				</ul>			
+			</nav>		
+		</div>
+		<div id="featured">
+			<div id="featured-container">
+			  	<div class="cr-container" id="cr-container">
+					<div class="cr-content-wrapper" id="cr-content-wrapper">
+						<!-- Container block-->
+						<!--
+						<div class="cr-content-container" id="content-1" style="display:block;">
+							<img src="images/event/refresh_robin_bg.jpg" class="cr-img"/>							
+							<div class="cr-content">
+								<div class="cr-content-headline">									
+								</div>
+								<div class="cr-content-text">
+									<h2>Refresh: A 3rd Fridays Event</h2>
+									<div class="eventSummary">Friday, March 16th at Select Lounge</div>
+									
+									<form action='https://madmimi.com/signups/subscribe/43159' target="_blank" method='post'>
+										<div class="emailForm">
+											<div class="formLine">
+												<label for='signup_name'>Name</label>
+												<input id='signup_name' name='signup[name]' type='text' />
+											</div>
+											<div class="formLine">
+												<label for='signup_email'>Email</label>
+												<input id='signup_email' name='signup[email]' type='text' />
+											</div>
+											<div class="formButtons">
+												<input name='commit' class='button' type='submit' value='RSVP' />
+											</div>
+										</div>
+									</form>	
+								</div>
+							</div>
+						</div>
+	-->
+						<div class="cr-content-container" id="content-2" style="display:block;">
+							<img src="images/event/black_enterprise_bg.jpg" class="cr-img"/>														
+							<div class="cr-content">
+								<div class="cr-content-headline">									
+								</div>
+								<div class="cr-content-text">
+									<h2>Black Enterprise</h2>
+									<div class="eventSummary">The OFFICIAL Birthday celebration for our own Anthony!<br />
+										Advance tickets availabe at DTLR!<br />
+										<h3>Table and Bottle service available</h3>
+										Black Tie attire suggested. 
+									</div>									
+								</div>
+							</div>
+						</div>
+
+						<!-- cr-content-container -->				
+						
+						<div class="cr-content-container" id="content-3" style="display:none;">
+							<img src="images/event/birthday_banner_remy.jpg" class="cr-img"/>														
+							<div class="cr-content">
+								<div class="cr-content-headline">									
+								</div>
+								<div class="cr-content-text">
+									<h2>Let Us Plan YOUR Birthday!</h2>
+									<div class="eventSummary">FREE Packages Available<br />
+										Includes complimentary admission and your own RSVP guest list!<br />
+										<h3>VIP accomodations also available</h3>
+										Contact us now to start the process! It's never to early!!
+									</div>									
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="cr-content-container" id="content-4" style="display:none;">
+							<img src="images/venues/table.jpg" class="cr-img"/>														
+							<div class="cr-content">
+								<div class="cr-content-headline">									
+								</div>
+								<div class="cr-content-text">
+									<h2>Book Your VIP table TODAY!</h2>
+									<div class="eventSummary">
+									
+										Contact us now to start the process! It's never to early!!
+									</div>									
+								</div>
+							</div>
+						</div>
+						<!-- cr-content-container -->
+					</div><!-- cr-content-wrapper -->
+					<div class="cr-thumbs">			
+<!--
+						<div data-content="content-1" class="cr-selected">
+							<img src="images/event/refresh_robin_small.jpg"/>
+							<h4>Refresh - 3/16</h4>
+						</div>
+-->
+						<div data-content="content-2" class="cr-selected">
+							<img src="images/event/black_enterprise_small.jpg"/>
+							<h4>Black Enterprise - 4/1</h4>						
+						</div>
+
+
+						<div data-content="content-3" >
+							<img src="images/event/birthday_banner_remy_small.jpg"/>
+							<h4>Plan YOUR Birthday</h4>						
+						</div>
+						<div data-content="content-4" >
+							<img src="images/venues/table_thumb.jpg"/>
+							<h4>Book your VIP Table</h4>						
+						</div>
+					</div><!-- cr-thumbs -->
+				</div><!-- cr-container -->
+			</div>
+		</div>
+		<div id="content">
+			<div id="leftPanel">
+			<h4 class="header gray">Latest Headlines</h4>			
+			
+			
+			
+				
+							 			
+			
+			<div class="headline-event internal">
+				<div class="event-title"><a href="./events.html">Black Enterprise: A Black Tie Affair</a></div>
+				<div class="event-date">Sunday, April 1, 2012</div>
+				<div class="event-time">6:00pm - 11:00pm</div>
+				<div class="event-location">World Trade Center, 21st Floor<br />401 S. Pratt St</div>
+				<div class="event-details">Birthday Celebration for Good Fellaz' own Anthony</div>
+			</div>					 			
+			<div class="headline-event internal">
+				<div class="event-title"><a href="./events.html">Hardball: A 1st Fridays Event</a></div>
+				<div class="event-date">April 6, 2012</div>
+				<div class="event-time">9:00pm - 2:00am</div>
+				<div class="event-location">Select Lounge<br />415 N. Paca St</div>
+				<div class="event-details">Remy V Launch event</div>
+
+			</div>		
+			<div class="headline-event internal">
+				<div class="event-title"><a href="./events.html"A 3rd Fridays Event</a></div>
+				<div class="event-date">April 20, 2012</div>
+				<div class="event-time">9:00pm - 2:00am</div>
+				<div class="event-location">Select Lounge<br />415 N. Paca St</div>
+				<div class="event-details"></div>
+				<!-- <div class="rsvp"><a class="rsvpTrigger1"><img src="./images/rsvp.png"/></a></div> -->
+			</div>	
+			 <div class="headline-event">
+				<div class="event-title"><a target="_blank"  href="http://theatrebaltimore.com/Events.php?search_text=The+Soulful+Symphony-+Say+Amen+Somebody">The Soulful Symphony - Say Amen Somebody</a></div>
+				<div class="event-date">March 24, 2012</div>
+				<div class="event-time">8:00pm</div>
+				<div class="event-location">Hippodrome<br />
+				12 N. Eutaw Street<br />
+				Baltimore, MD 21201
+				</div>
+				<div class="event-details"></div>			
+			</div>
+			<div class="headline-event">
+				<div class="event-title"><a target="_blank"  href="http://www.ticketmaster.com/">Ringling Bros. Barnum and Bailey Circus</a></div>
+				<div class="event-date">March 21-27, 2012</div>
+				<div class="event-time">varies</div>
+				<div class="event-location">1st Mariner Arena<br />
+				201 W. Baltimore Street<br />
+				Baltimore, MD 21201
+				</div>
+				<div class="event-details"></div>			
+			</div>
+			 <div class="headline-event">
+				<div class="event-title"><a target="_blank"  href="http://www.borail.org/Calendar-bo.aspx">Breakfast Buffet and train ride with the Easter Bunny</a></div>
+				<div class="event-date">April 6-7, 2012</div>
+				<div class="event-time">varies</div>
+				<div class="event-location">B & O Railroad Museum<br />
+					
+				</div>
+				<div class="event-details"></div>			
+			</div>
+			 <div class="headline-event">
+				<div class="event-title"><a target="_blank"  href="http://www.ticketmaster.com/event/1500476EE7C78AF3?artistid=828721&majorcatid=10002&minorcatid=51">Mike Epps - I'm still Standing</a></div>
+				<div class="event-date">April 7, 2012</div>
+				<div class="event-time">8:00pm</div>
+				<div class="event-location">1st Mariner Arena<br />
+				201 W. Baltimore Street<br />
+				Baltimore, MD 21201
+				</div>
+				<div class="event-details"></div>			
+			</div>
+			 <div class="headline-event">
+				<div class="event-title">Baltimore Sneaker Show 2k12</div>
+				<div class="event-date">April 7, 2012</div>
+				<div class="event-time">6:00pm to 10:00pm</div>
+				<div class="event-location">Carmelo Anthony Center<br />
+				1100 East Fayette Street<br />
+				Baltimore, MD 21202			
+				</div>
+				<div class="event-details">Advance tickets $15</div>			
+			</div>
+			 <div class="headline-event">
+				<div class="event-title"><a target="_blank"  href="http://www.410area.com/maryland/baltimore/events/127175/2012-decanter-wine-festival.htm">Decanter Wine Festival</a></div>
+				<div class="event-date">April 21, 2012</div>
+				<div class="event-time">12:00pm</div>
+				<div class="event-location">Pimlico Race Track<br />
+				5201 Park Heights <br />
+				Baltimore, MD 
+				</div>
+				<div class="event-details"></div>			
+			</div>	
+			<div class="headline-event">
+				<div class="event-title"><a target="_blank"  href="http://www.baltimorearena.com/events/cirque-du-soleil/">Michael Jackson THE IMMORTAL World Tour by Cirque du Soleil</a></div>
+				<div class="event-date">May 5-6, 2012</div>
+				<div class="event-time">varies</div>
+				<div class="event-location">1st Mariner Arena<br />
+				201 W. Baltimore Street<br />
+				Baltimore, MD 21201
+				</div>
+				<div class="event-details">Prices: $52 - $250</div>			
+			</div>
+		 	<div class="headline-event">
+				<div class="event-title"><a target="_blank"  href="http://www.ticketmaster.com/">New Edition</a></div>
+				<div class="event-date">May 20, 2012</div>
+				<div class="event-time">7:00pm</div>
+				<div class="event-location">1st Mariner Arena<br />
+				201 W. Baltimore Street<br />
+				Baltimore, MD 21201
+				</div>
+				<div class="event-details"></div>			
+			</div>
+			</div><div id="rightPanel">
+			<div id="mailSignup">
+					<form target="_blank" method="post" action="http://madmimi.com/signups/subscribe/24006">
+						<h4 class="header social">Join our mailing list!</h4>
+						<div class="mailingListForm">
+						<div class="formLine"><label for="signup_name">Name:</label> <input class="textInput" name="signup[name]" id="signup_name"></div>
+						<div class="formLine"><label for="signup_email">Email:</label> <input class="textInput" name="signup[email]" id="signup_email"></div>
+						<div class="formLine"><label for="signup_phone">Birth Date:</label> <input class="textInput" name="signup[phone]" id="signup_phone"></div>
+						<div class="formButtons"><input name="commit" value="Sign Up" type="submit" class="button"></div>
+						</div>
+					</form>
+				</div>
+				<div id="ad">
+					<img src="./images/remy_v.jpg" />
+				</div>
+			 <!-- Divs must NOT be separated by white space -->
+			
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 6,
+				  interval: 10000,
+				  width: 'auto',
+				  height: 300,
+				  theme: {
+					shell: {
+					  background: '#333333',
+					  color: '#ffffff'
+					},
+					tweets: {
+					  background: '#000000',
+					  color: '#ffffff',
+					  links: '#4aed05'
+					}
+				  },
+				  features: {
+					scrollbar: true,
+					loop: false,
+					live: true,
+					hashtags: true,
+					timestamp: true,
+					avatars: true,
+					behavior: 'default'
+				  }
+				}).render().setUser('WeAreGoodFellaz').start();
+			</script>
+			
+	   			<div id="fbPlugin"> 	
+				
+			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fwearegoodfellaz&amp;width=280&amp;colorscheme=dark&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=590" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:590px;" allowTransparency="true"></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="footer">Copyright Driven Entities, LLC</div>
+	</div>
+	
+	<!-- Contact Us Modal -->
+		<div class="jqmWindow" id="rsvp">				
+			Please wait..
+		</div>
+		<div class="jqmWindow" id="contactUs">				
+			Please wait..
+		</div>
+		<div class="jqmWindow" id="philanthropy">
+			Please wait..
+		</div>
+	
+  </body>
+</html>

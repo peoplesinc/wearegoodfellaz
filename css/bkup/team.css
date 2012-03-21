@@ -1,0 +1,99 @@
+/* Changes to Common */
+div#leftPanel{
+ background: none;
+ border: none;
+}
+
+
+/** NEW **/
+div.companyInfo{
+	width: 100%;
+	min-height: 200px;
+	margin: 5px 0;
+	background: #fff  url("../images/headline_bg.jpg") top left repeat;
+	text-align: left;
+	padding: 5px;
+	border: 1px #ccc solid;
+	border-radius: 15px;
+}
+
+div.companyInfo div.imageWrapper{
+	margin: auto;
+	display: inline-block;
+	padding: 15px;
+	*display: inline;
+	zoom: 1;
+}
+
+div.companyInfo div.imageWrapper img{
+	/* width: 200px; */
+	height: 200px;
+}
+
+
+
+div.companyInfo div.summary{
+	margin: 10px 0 5px 15px;
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom: 1;
+}
+
+div.members{
+/*	background: white; */
+margin-top: 15px;
+}
+
+div.memberThumbnails{
+	display: inline-block;
+	width: 650px;
+	vertical-align: top;
+	*display: inline;
+	zoom: 1;
+}
+
+div.memberThumbnails img{
+	width: 140px;
+	height: 200px;
+	margin: 7px;
+	border: 1px #000 solid;
+	cursor: pointer;
+}
+
+div#memberDetails{
+	width: 290px;
+	display: inline-block;
+	padding: 10px 4px;
+	background: #fff;
+	min-height: 400px;
+	margin: 7px 0 0 0;
+	border: 1px #ccc solid;
+	border-radius: 15px;
+	*display: inline;
+	zoom: 1;
+}
+
+div#memberDetails img{
+	width: 250px;
+	max-height: 300px;
+}
+
+div#memberDetails div.bio{
+	text-align: left;
+	margin: 10px 0;
+}
+
+div#memberDetails div.bio h3{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+span.twitterName a{
+	margin-top: 7px; 
+	font-style:italic;
+	color: #666;	
+	font-size: 13px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html >
+   <head >
+      <title ></title>
+      <meta http-equiv='Content-Type' content="text/html; charset=utf-8"/>
+      <style >BODY,TD{font-family:Arial;font-size :12px;}</style>
+      <meta content='MSHTML 6.00.6002.18510' name='GENERATOR'/>
+   </head>
+   <body style='BACKGROUND-COLOR: transparent'>
+      <div >Hello %Name%!</div>
+      <div >&nbsp;</div>
+      <div >
+Thanks for visiting our website.&nbsp; We will review&nbsp;the information 
+you provided.&nbsp;
+      </div>
+      <div >&nbsp;</div>
+      <div >We will contact you soon!</div>
+      <div >&nbsp;</div>
+      <div >Regards</div>
+      <div >WeAreGoodFellaz.com | @WeAreGoodFellaz </div>
+   </body>
+</html>

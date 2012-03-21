@@ -1,0 +1,342 @@
+/* General Styling */
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+ background: #E0DFDB url('../images/Two_1.jpg') ;  
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family:Georgia, "Times New Roman", Times, serif;
+/* font-family: "lucida grande",lucida,tahoma,helvetica,arial,sans-serif!important; */
+}
+
+.linkImage{
+ width: 100px;
+}
+
+div#mainContainer{
+  margin-top: 0px;
+  width: 1028px;
+  min-height: 700px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2px 0 2px;
+}
+
+
+div#footer{
+ width: 100%;
+ float: left;
+ font-size:11px;
+ border-top: 1px solid #fff;
+ margin-top: 20px;
+}
+
+
+/* Banner */
+div#banner{
+  width: 100%;  
+  color: white;
+  min-height: 130px;
+}
+
+#banner-emblem {
+    margin: 5px 0 0 0px;
+}
+
+#banner-emblem img {
+    height: 170px;
+    width: 540px; 
+}
+
+/* Navigation Bar */
+a.button{
+  width: 100%;
+  height: 100%;
+  margin: 0px 1px 0px 1px;  
+  text-align: center; 
+  color: #000000; 
+  font-size: 18px;
+}
+
+a.button img{
+  width: 100%;
+  height: 100%;  
+}
+
+a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+ 	color: #4AED05;
+}
+
+
+
+a.grayGradient{
+/* background-image:  url('../images/silver_gradient_small.png');  */
+color: white;
+}
+
+a.grayGradient:hover, a.grayGradient.active{
+background-image:  url('../images/new_light_gray.jpg');
+color: black;
+}
+
+/* Featured Section */ 
+div#featured {
+ 	/*background: #fff;
+    border: 1px solid #999999; */
+    height: 350px;
+    width: 980px; 
+    margin: 10px auto 0 auto;
+	text-align:center;
+}
+
+div#featured-container{
+  height: 330px;
+  text-align: center;
+}
+
+div#featured-content div.contentText{
+  float: left;
+  width: 570px;  
+}
+
+div#featured-content img{
+  float: left;
+  margin-left: 70px;
+  width: 200px;
+/*  height: 250px; */
+  border: 2px #ccc solid;
+}
+
+
+/* Content Wrapper */
+div#content{
+  min-height: 500px;
+  width: 980px;
+  margin: 0px auto;
+}
+
+.header{
+ width: 100%;
+ height: 30px;
+ padding: 3px 0 0 0;
+ margin: 0;
+ text-align:center;
+ color: black;
+ 
+}
+
+.gray{
+	background: url('../images/new_dark_gray.jpg') repeat-x scroll 0 0; 
+	color: white;
+}
+
+.silver{
+	background: url('../images/silver_gradient_small.png') repeat-x scroll 0 0; 
+}
+
+.social{
+	color: #FFF;
+	background-color: #333;
+}
+
+/* Left Panel */
+div#leftPanel{
+ background: #fff;
+ display: inline-block;
+ width: 98%; 
+ margin-right: 5px;
+ min-height: 550px;
+ border: 1px #999999 solid;
+ *display: inline;
+ zoom: 1;
+}
+
+
+/* Right Panel */
+div#rightPanel{
+  display: inline-block; 
+  *display: inline;
+  zoom: 1;
+  width: 280px;
+  margin: 0px;
+  min-height: 575px;
+  vertical-align:top;
+}
+
+
+div#mailSignup{
+ border: 1px #999 solid;
+ margin: 15px 0px 10px 0px;
+ color:#4aed05;
+ background-color: black;
+/* border-radius: 10px; */
+}
+
+div.mailingListForm{
+ padding: 10px 0 0 0;
+}
+
+div.mailingListForm div.formLine{
+ padding-top: 5px;
+ margin-left: 5px;
+}
+
+div#mailSignup label{
+ width: 80px;
+ display:inline-block;
+ text-align: right;
+}
+
+div#mailSignup input.textInput{
+ width: 150px;
+}
+
+div.mailingListForm div.formButtons{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 100%;
+	
+}
+
+div.mailingListForm div.formButtons input{
+	color: #FFF;
+	background-color: #333;
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px none;
+	width: 100%;
+	height: 25px;
+}
+
+div.mailingListForm div.formButtons input:hover {
+cursor: pointer; /* cursor: hand; for IE5 */
+}
+
+div#fbPlugin{
+ margin-top: 10px;
+ background-color:#000000;
+}
+
+/** MODAL STYLING */
+/* jqModal base Styling courtesy of;
+  Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+  the Window's z-index value will be set to 3000 by default (in jqModal.js). You
+  can change this value by either;
+    a) supplying one via CSS
+    b) passing the "zIndex" parameter. E.g.  (window).jqm({zIndex: 500}); */
+  
+.jqmWindow {
+    display: none;
+    
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    
+    margin-left: -300px;
+    width: 600px;
+    
+    background-color: #EEE; 
+    color: #333;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+div#contactUs.jqmWindow{
+background: transparent url('../images/bg_content.png') repeat scroll 0 0;
+}
+
+.jqmOverlay { background-color: #000; }
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+
+/** Modal Styling **/
+div#contactDialog div.links{
+	margin: 10px 0;
+}
+
+div#contactDialog div.links a.contactLink{
+	background: url('../images/gray_gradient_small.png');
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+	vertical-align: middle;
+	display: inline-block;
+	color: white;
+	border: 1px solid #fff;
+	 border-radius: 10px;
+}
+
+div#philanthropy{
+ width: 300px;
+ margin-left: -175px;
+}
+
+div#rsvp{
+		width: 450px;
+}
+
+div#rsvp div.closeWrapper{
+	width: 100%;
+	text-align: right;
+	cursor:pointer;
+}
+
+div#rsvp div.formButtons input{
+	color: #4AED05;
+/* 	background-color: #000; */
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px none;
+	width: 200px;
+/*	height: 25px; */
+}
+
+div.emailForm{
+ padding: 10px 0 0 0;
+ width: 300px;
+ margin: auto;
+ font-size: 17px;
+}
+
+
+div.emailForm div.formLine{
+ padding-top: 5px;
+ margin-left: 5px;
+}
+
+div.emailForm label{
+	width: 65px;
+	font-weight: bold;	
+}
+
+
+div.emailForm div.formButtons{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+div.formButtons input:hover {
+cursor: pointer; /* cursor: hand; for IE5 */
+}

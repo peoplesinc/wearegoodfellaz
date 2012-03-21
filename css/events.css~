@@ -1,0 +1,322 @@
+/* General Styling */
+div#leftPanel{
+  color: white;
+  text-align:center;
+  background: none;
+  border: none;
+  margin-top: 10px;
+}
+
+div#leftPanel h2{
+ color: black;
+}
+
+
+div#leftPanel  a{
+/* color: whit; */
+ text-decoration:none;
+ cursor:pointer;
+ border: 0px none; 
+}
+
+div#leftPanel a img{
+ text-decoration:none;
+/* border: 0px none; */
+}
+
+div#leftPanel  .icon{	
+ height: 20px;
+ width: 20px;
+ color: black;
+}
+
+div#leftPanel  a:visted{
+ color: white;
+ text-decoration:none;
+ cursor:pointer; border: 0px none;
+}
+
+div#leftPanel  .header{
+  color: #333399; 
+}
+
+div#leftPanel  .linkImage{
+ width: 100px;
+}
+
+.purple{
+	color: #333399;
+}
+
+.white{
+	color: #fff;
+}
+
+.electric{
+color: #00CCFF
+}
+
+.bold{
+	font-weight: bold;
+}
+
+/** CONTEST FORM 
+div.contestForm{
+	width: 650px; 
+	color: white;	
+	margin-top: 15px;
+}
+
+div.contestForm div.emailForm{
+ 	float: left;
+}
+
+.contestFormHeader{
+	float:left;
+	margin: 20px 30px 0px 0;
+	text-align: center;	
+}
+
+.contestFormHeader .headerText{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.contestFormHeader a#rulesLink{
+	margin-top: 35px;
+	color: #333399;
+	display: block;
+}
+
+/** EMAIL FORM
+
+div.contestForm div.emailForm{
+	width: 40%;
+	text-align: right;
+}
+
+div.emailForm{
+ padding: 10px 0 0 0;
+}
+
+div.emailForm div.formLine{
+ padding-top: 5px;
+ margin-left: 5px;
+}
+
+div.emailForm label{
+	width: 65px;
+	
+}
+
+
+
+div.formButtons{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+div.formButtons input{
+	color: #FFF;
+	background-color: #333399;
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px none;
+	width: 100%;
+	height: 25px;
+}
+
+div.formButtons input:hover {
+cursor: pointer; /* cursor: hand; for IE5 
+}
+*/
+
+/* END EMAIL FORM */
+
+
+
+/** Middle Row **/
+div#middleRow{
+	width: 100%;
+	height: 450px; 
+	margin: 25px 0;
+	border: 2px #000 solid;
+	border-radius: 15px;
+	background: #000 url("../images/black_henny.jpg") bottom center no-repeat;
+	color: white;
+	padding: 2px;
+}
+
+div#middleRow div.horizontalRow{
+/*	display: inline-block; */
+ 	float: left;
+	*display: inline;
+	zoom: 1;
+	height: 330px;
+	padding: 10px; 
+	width: 240px;	
+}
+
+
+div#middleRow div.horizontalRow img.mainImage{
+	width: 100%;
+	height: 75px;
+}
+
+
+div#middleRow div.horizontalRow div.details{
+	width: 100%;
+	text-align:left;
+}
+
+div#middleRow div.horizontalRow div.details p{
+	margin: 7px;
+}
+
+div#rsvpInfo{
+/*	background: #fff url("../images/headline_bg.jpg") top left repeat; */
+	background: url("../images/bg_content_black.png");
+}
+
+div#rsvpInfo ol{
+	width: 75%;
+	margin-left: 30px;	
+}
+
+div#birthdayInfo{
+	margin: 0 15px;
+	width: 380px!important;	
+ 	background: url("../images/bg_content_black.png");
+/*	color: white; */
+}
+
+div#birthdayInfo .birthdaysImage{
+	width: 100%;	
+	height: 75px;
+}
+
+
+div#tableInfo{
+	background: url("../images/bg_content_black.png");
+/*	color: black; */
+}
+
+
+/* END MIDDLE ROW **/
+
+
+/* Upcoming events */
+div#upcomingEvents{
+/* width: 700px; 
+ padding: 10px;
+ height: 900px; */
+}
+
+div.featured-content{
+ width: 942px;
+ float: left; 
+ margin: 5px 0 5px 5px; 
+ padding: 10px;
+ border: 2px #000 solid;
+ border-radius: 15px;
+ font-size: 20px;
+ background: #000 url("../images/grim-reaper-black-pattern.jpg") top right repeat-y;
+}
+
+
+
+div.featured-content ul{
+margin: 7px 0 5px 10px
+}
+div.featured-content li{
+	margin-left: 7px;
+}
+
+
+div.featured-content div.contentText{
+  float: left; 
+/* display: inline-block; */
+  width: 575px;
+  text-align: left;
+  padding: 10px;
+ 	height: 100%;  
+}
+
+div.featured-content div.contentText a{
+  color: white; 
+}
+
+div.contentText div.eventTitle{
+	font-size:24px;
+	font-style:italic;
+	font-weight:bold;
+	border-bottom: 1px #ccc solid;
+}
+/* NEW STYING for Events Page */
+
+div.contentText div.text{
+	display: inline-block;
+	width: 450px;
+	vertical-align:top;
+	*display: inline;
+	zoom: 1;
+}
+
+div.contentText label{
+	vertical-align:top;
+	display: inline-block;
+	width: 100px;
+	color: #008000;
+	font-weight:bold;
+	margin-right: 6px;
+	*display: inline;
+	zoom: 1;
+}
+
+div.featured-content div.contentText div.textLine{
+ padding: 3px;
+}
+
+div.featured-content div.contentText div.textLine.rsvp .rsvpLink {
+ width: 90%;
+ 	display: inline-block;
+*display: inline;
+	zoom: 1;
+}
+
+div.featured-content div.contentText div.textLine.rsvp img{
+ height: 50px;
+}
+
+
+div.featured-content div.eventImages{
+/* display: inline-block; */
+	float: left;
+  margin-left: 11px;
+  width: 300px;
+  margin: 10px;
+ 
+}
+
+div.featured-content div.eventImages img{
+/*   float: left; */
+  margin-bottom: 15px;
+  max-width: 550px;
+  max-height: 400px;
+/*  height: 200px; */
+  border: 1px #000 solid;
+}
+
+div.featured-content img.tall{
+ /* height: 300px; */
+}
+
+
+
+
+img#howToDress{
+	height: 50px;
+}

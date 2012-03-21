@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html >
+   <head >
+      <title ></title>
+      <meta http-equiv='Content-Type' content="text/html; charset=utf-8"/>
+      <style type='text/css'>
+BODY {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+}
+
+td{
+    font-size : 10pt;
+	text-align: left;
+	border-bottom:1px solid #DEDEDE;
+	padding:5px;
+}
+
+td.FieldName{
+	font-weight:bold;
+	vertical-align: top;
+}
+
+td.FieldValue {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+}
+
+td.ExtraInfoName {
+	font-family : Verdana, Helvetica, sans-serif;
+	font-size : 8pt;
+	border-bottom:0px;
+	font-weight:bold;
+}
+
+td.ExtraInfoValue {
+	font-family : Verdana, Helvetica, sans-serif;
+	font-size : 8pt;
+	border-bottom:0px;
+}
+div.table_container
+{
+	margin-top:20px;
+	margin-bottom:10px;
+}
+	
+fieldset {
+	display:block; 
+	border-color: #ddddFF;
+        border-width: 1px 0 0 0;
+        border-style: solid none none none;
+	padding:5px; 
+	font-family:verdana, sans-serif; 
+	margin-bottom:0.5em; 
+}
+      </style>
+      <meta content='MSHTML 6.00.6002.18510' name='GENERATOR'/>
+   </head>
+   <body style='BACKGROUND-COLOR: transparent'>
+The following data was submitted in 
+the form named contact_us by a visitor 
+      <div class='table_container'>
+         <table cellSpacing='0' cellPadding='5'>
+            <tbody >
+               <tr >
+                  <td class='FieldName'>Name </td>
+                  <td class='FieldValue'>%Name% </td>
+               </tr>
+               <tr >
+                  <td class='FieldName'>Email </td>
+                  <td class='FieldValue'>%Email% </td>
+               </tr>
+               <tr >
+                  <td class='FieldName'>Reason </td>
+                  <td class='FieldValue'>%Reason% </td>
+               </tr>
+               <tr >
+                  <td class='FieldName'>Message </td>
+                  <td class='FieldValue'>%Message% </td>
+               </tr>
+            </tbody>
+         </table>
+         <br />
+         <br />
+         <fieldset style='WIDTH: 450px'>
+            <legend >More Info</legend>
+            <table cellSpacing='0' cellPadding='5'>
+               <tbody >
+                  <tr >
+                     <td class='ExtraInfoName'>FormSubmissionTime </td>
+                     <td class='ExtraInfoValue'>%_sfm_form_submision_time_% </td>
+                  </tr>
+                  <tr >
+                     <td class='ExtraInfoName'>VisitorsIP </td>
+                     <td class='ExtraInfoValue'>
+%_sfm_visitor_ip_%                        <br />
+                        <a href='http://www.ip2location.com/free.asp?ipaddresses=%_sfm_visitor_ip_%'>
+Locate 
+      it!
+                        </a>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </fieldset>
+      </div>
+   </body>
+</html>

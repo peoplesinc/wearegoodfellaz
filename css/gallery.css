@@ -1,0 +1,75 @@
+div#leftPanel{
+	background: #000;
+		border-radius: 15px;
+	border: 1px #4AED05  solid;
+}
+
+div#galleryEvents{
+	width: 100%;	
+	background: #000;
+	margin: 15px 0;
+	padding: 20px 0;
+	/*border-radius: 15px;
+	border: 1px #4AED05  solid;*/
+	color: #fff;
+}
+
+div#galleryEvents div.galleryMenuHeader{
+	margin-bottom: 10px;
+}
+
+div#galleryEvents div.galleryMenuNote{
+	color: #999;
+	font-size:11px;
+}
+
+div#gallery{
+	margin: auto;
+	width: 99%;
+	text-align:center;
+}
+
+/* Past Events */ 
+div#pastEvents{
+
+ padding: 20px 0;
+/* width: 820px; */
+/* height: 350px; */
+}
+
+div#pastEvents div.eventWrapper{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+
+}
+
+
+div#pastEvents div.event{
+	text-align:left;
+	padding: 15px 20px 0 0;	
+	display: inline;
+/*	float: left; */
+}
+
+div#pastEvents div.event img{
+	width: 200px;
+	height: 300px;
+/*	float: left; */
+}
+
+
+div#pastEvents div.mostRecent{
+  display: inline-block;
+  width: 50%;
+}
+ 
+div#pastEvents div.archive{
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+div#pastEvents div.archive h4{
+  margin: 7px 0px;
+}

@@ -1,0 +1,55 @@
+div#banner-links{
+	text-align: right;	
+	margin: 0 25px 0 0;
+}
+
+div#leftPanel{
+	background: url(../images/vidback2.jpg) no-repeat;	
+        border-radius: 15px;
+/*	border: 1px #4AED05  solid; */
+	border: 1px #666  solid; 
+	color: #ffffff;
+}
+
+div#tvWrapper{
+	margin: 25px 0 20px 0;
+	padding: 40px 0 0 0;
+	width: 100%;
+	height: 610px; 
+	background: url(../images/mytv.png) top center no-repeat;
+}
+
+div#heading{
+	
+	text-align: left;
+	font-weight: bold;
+	font-size: 21px;
+	margin: 10px 0 0 50px;
+}
+
+div#channels{
+	width: 100%;
+	padding: 10px;
+	margin: 15px 0 0 0;
+	text-align: left;
+	border-top: 1px #ccc solid;
+}
+
+div#channels .title{
+	width: 100%;	
+	text-align: center;
+	padding: 10px 0 15px 0; 
+}
+
+div#channels div.video{
+	display: inline-block;
+	width: 315x;
+	vertical-align: top;
+	*display: inline;
+	zoom: 1;	
+}
+
+div#channels div.video img{
+	width: 310px;
+	
+}

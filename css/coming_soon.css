@@ -1,0 +1,347 @@
+/* General Styling */
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+  background: #000;  
+  color: white;
+  font-family: "lucida grande",lucida,tahoma,helvetica,arial,sans-serif!important;
+  text-align:center;
+   padding-top: 20px;
+}
+
+label{
+	color: #333399;
+	font-weight:bold;
+	font-style:italic;
+	margin-right: 6px;
+}
+
+.bc label{
+	color: #999;	
+}
+
+label.white{
+	color: white;
+}
+
+a{
+ color: white;
+ text-decoration:none;
+ cursor:pointer;
+ border: 0px none;
+}
+
+a img{
+ text-decoration:none;
+ border: 0px none;
+}
+
+.icon{	
+ height: 20px;
+ width: 20px;
+ color: black;
+}
+
+a:visted{
+ color: white;
+ text-decoration:none;
+ cursor:pointer; border: 0px none;
+}
+
+.header{
+  color: #333399; 
+}
+
+.linkImage{
+ width: 100px;
+}
+
+.purple{
+	color: #333399;
+}
+
+.white{
+	color: #fff;
+}
+
+.electric{
+color: #00CCFF
+}
+
+.bold{
+	font-weight: bold;
+}
+
+
+
+div#mainContainer{
+  margin-top: 0px;
+  width: 800px;
+  height: 600px; 
+  background:#000 url(../images/coming_soon.jpg);  
+  padding: 0 2px 0 2px;
+  text-align: left;
+}
+
+/* Email Form */
+div#mailSignup{
+	width: 170px;
+	color: white;	
+	margin-left: 250px;
+	margin-top: 300px;
+}
+
+
+
+div.contestForm{
+	width: 650px; 
+	color: white;	
+	margin-top: 15px;
+}
+
+div.contestForm div.emailForm{
+ 	float: left;
+}
+
+.contestFormHeader{
+	float:left;
+	margin: 20px 30px 0px 0;
+	text-align: center;	
+}
+
+.contestFormHeader .headerText{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.contestFormHeader a#rulesLink{
+	margin-top: 35px;
+	color: #333399;
+	display: block;
+}
+
+div.contestForm div.emailForm{
+	width: 40%;
+	text-align: right;
+}
+
+div.emailForm{
+ padding: 10px 0 0 0;
+}
+
+div.emailForm div.formLine{
+ padding-top: 5px;
+ margin-left: 5px;
+}
+
+div.emailForm label{
+	width: 65px;
+	/* display:inline-block;	*/
+}
+
+div.formButtons{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+div.formButtons input{
+	color: #FFF;
+	background-color: #333399;
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px none;
+	width: 100%;
+	height: 25px;
+}
+
+div.formButtons input:hover {
+cursor: pointer; /* cursor: hand; for IE5 */
+}
+
+
+div#contactUs{
+margin-top: 35px;
+}
+
+div.topBorder{
+ border-top: 1px solid #333399;
+}
+
+div.bottomBorder{
+ border-bottom: 1px solid #333399;
+}
+
+/* Upcoming events */
+div#upcomingEvents{
+ border-top: 1px solid #00CCFF;
+ width: 800px;
+ padding: 10px;
+ height: 550px;
+}
+
+div.featured-content{
+ /* padding: 10px 0; 
+ height: 470px; */
+ float: left;
+ margin: 5px 0;
+ padding: 10px;
+ background: #333;
+ border: 1px #fff solid;
+ border-radius: 15px;
+}
+
+div.featured-content.midnight label{
+ color: gold;
+}
+
+div.featured-content.bc{
+ background: pink;
+ color: black;
+}
+
+div.featured-content.bc a, div.featured-content.bc a:visited{
+	color: black;
+}
+
+div.featured-content ul{
+margin: 7px 0 5px 10px
+}
+div.featured-content li{
+	margin-left: 7px;
+}
+
+
+div.featured-content div.contentText{
+  float: left; 
+/* display: inline-block; */
+  width: 470px;
+  text-align: left;
+  margin: 10px;
+}
+
+
+div.featured-content div.contentText div{
+ padding: 3px;
+}
+
+div.featured-content.bc h2.thanks{
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	margin: 10px 0px;
+}
+
+div.featured-content div.eventImages{
+/* display: inline-block; */
+float: left;
+  margin-left: 31px;
+  width: 250px;
+  margin-top: 10px;
+ 
+}
+
+div.featured-content img{
+/*   float: left; */
+  margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
+  border: 1px #ccc solid;
+}
+
+div.featured-content img.tall{
+  height: 300px;
+
+}
+
+
+div#upcomingDates{
+	width: 820px;
+	margin: 50px 0 25px 0;
+	height: 165px;
+}
+
+div#upcomingDates div.text{
+/*	float: left; */
+display:inline-block;
+	border-right: 1px #999 solid;
+	width: 450px;
+	margin-bottom: 30px;
+}
+
+div#upcomingDates div.dates{
+/*	float: right */
+display: inline-block;
+height: 100%;
+vertical-align: top;
+}
+
+
+div#upcomingDates div.dates ul{
+width: 90%;
+text-align:left;
+padding: 2px;
+}
+
+div#upcomingDates div.dates li{
+padding: 2px;
+}
+
+
+/* Past Events */ 
+div#pastEvents{
+ border-top: 1px solid #333399;
+ padding: 20px 0;
+ width: 820px;
+/* height: 350px; */
+}
+
+div#pastEvents div.eventWrapper{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+
+}
+
+
+div#pastEvents div.event{
+	text-align:left;
+	padding: 15px 20px 0 0;	
+	display: inline;
+/*	float: left; */
+}
+
+div#pastEvents div.event img{
+	width: 200px;
+	height: 300px;
+/*	float: left; */
+}
+
+
+div#pastEvents div.mostRecent{
+  display: inline-block;
+  width: 57%;
+}
+ 
+div#pastEvents div.archive{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+div#pastEvents div.archive h4{
+  margin: 7px 0px;
+}
+
+div#footer{
+ font-size:11px;
+ border-top: 1px solid #00CCFF;
+ margin-top: 20px;
+ padding: 10px 0 20px 5px;
+  width: 800px;
+}

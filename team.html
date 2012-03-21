@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+	 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<title>Good Fellaz :: Baltimore's nightlife professionals</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/team.css" />
+	<link type="text/css" rel="stylesheet" href="css/menu.css" />
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js" ></script>
+	<script type="text/javascript" src="js/jqModal.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/globalnav.js" ></script>
+	<script type="text/javascript" src="jquery-lightbox/js/jquery.lightbox-0.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery-lightbox/css/jquery.lightbox-0.5.css" media="screen" />
+	
+	<script type="text/javascript">
+		 var members = new Array();
+ 		members['taavon'] = './member/taavon.html';
+		members['anthony'] = './member/anthony.html';
+		members['kareem'] = './member/kareem.html';
+		members['nghia'] = './member/nghia.html';
+		members['sheldon'] = './member/sheldon.html';
+		members['dez'] = './member/dez.html';
+		members['darian'] = './member/darian.html';
+		members['robin'] = './member/robin.html';
+
+					
+		function loadMember(name){
+		$.ajax({
+		  url: members[name],
+		  success: function(data) {
+			$('#memberDetails').html(data);	
+			$('#memberDetails').show(500);
+		  }
+		});
+		
+		
+	}
+	</script>
+	
+  </head>
+  <body>
+
+    <div id="mainContainer">
+		<div id="banner">			
+			<div id="banner-emblem">
+				<img src="images/good-fellaz-trans.png" alt="Good Fellaz"/>				
+			</div>		
+		</div>
+		<div id="menu">
+			<nav id="globalheader" class="globalheader-js noinset ios3 globalheader-loaded">
+				<ul id="globalnav" class="nosearch" role="navigation">
+					<li id="menu-home"><a href="full.html" ><span>Home</span></a></li>
+					<li id="menu-events"><a href="events.html" ><span>Events</span></a></li>					
+					<li id="menu-gallery"><a href="gallery.html" ><span>Gallery</span></a></li>
+					<li id="menu-videos"><a href="./video.html"><span>Videos</span></a></li>
+					<li id="menu-philanthropy"><a class="philanthropyTrigger" href="#" ><span>Philanthropy</span></a></li>
+					<li id="menu-about"><a href="team.html" ><span>About Us</span></a></li>					
+					<li id="menu-contact"><a class="contactUsTrigger" href="#"><span>Contact Us</span></a></li>				
+				</ul>				
+			</nav>		
+		</div>
+		<div id="content">
+			<div id="leftPanel">
+			
+				<div class="companyInfo">
+					<div class="imageWrapper">
+						<a href="images/team/team.jpg" rel="lightbox" class="lightbox" title="Good Fellaz">
+								<img class="tall" src="images/team/team_small.jpg" />
+							</a>				
+					</div>
+					<div class="summary">
+					Driven Entities, LLC, dba Goodfellaz have been planning and hosting events for the young professional crowd in the Baltimore Metropolitan area since 2009.  Driven Entities LLC, began with four driven individuals, Taavon Peoples, Sheldon Leigh, Kareem Garrison, and Anthony Barnes as its founding members.  The company’s mission is to provide upscale entertainment in a family like environment.  Come to a Goodfellaz event and you’ll be treated like we’ve known you forever.  <br /><br/ >
+Driven Entities is determined to be a beacon in the community and have shown that through several charitable donations, included but not limited to a yearly fund raiser for the American Cancer Society.
+</div>
+				</div>
+				<!-- Team Content Here -->
+				<div class="members">
+					<div class="memberThumbnails">
+						<img src="images/team/anthony_1.jpg" onclick="loadMember('anthony');" />
+						<img src="images/team/kareem.jpg" onclick="loadMember('kareem');"/>
+						<img src="images/team/sheldon.jpg" onclick="loadMember('sheldon');"/>
+						<img src="images/team/taavon.jpg" onclick="loadMember('taavon');"/>
+						<img src="images/team/darian_1.jpg" onclick="loadMember('darian');"/>
+						<img src="images/team/fernandez.jpg" onclick="loadMember('dez');"/>
+						<img src="images/team/nghia.jpg" onclick="loadMember('nghia');"/>
+						<img src="images/team/robin.jpg" onclick="loadMember('robin');"/>
+					</div>
+					<div id="memberDetails" style="display: none">
+						Please Wait..													
+					</div>
+				</div>
+			</div>	
+			</div>		
+			<div id="footer">Copyright Driven Entities, LLC</div>
+		</div>
+
+	<!-- Contact Us Modal -->
+		<div class="jqmWindow" id="contactUs">
+			Please wait..
+		</div>
+		<div class="jqmWindow" id="philanthropy">
+			Please wait..
+		</div>
+	
+	<script type="text/javascript">
+		  $(function() {
+			$('a.lightbox').lightBox();
+		});
+		</script>
+  </body>
+</html>
