@@ -60,84 +60,6 @@ color: #00CCFF
 	font-weight: bold;
 }
 
-/** CONTEST FORM 
-div.contestForm{
-	width: 650px; 
-	color: white;	
-	margin-top: 15px;
-}
-
-div.contestForm div.emailForm{
- 	float: left;
-}
-
-.contestFormHeader{
-	float:left;
-	margin: 20px 30px 0px 0;
-	text-align: center;	
-}
-
-.contestFormHeader .headerText{
-	font-size:20px;
-	font-weight:bold;
-}
-
-.contestFormHeader a#rulesLink{
-	margin-top: 35px;
-	color: #333399;
-	display: block;
-}
-
-/** EMAIL FORM
-
-div.contestForm div.emailForm{
-	width: 40%;
-	text-align: right;
-}
-
-div.emailForm{
- padding: 10px 0 0 0;
-}
-
-div.emailForm div.formLine{
- padding-top: 5px;
- margin-left: 5px;
-}
-
-div.emailForm label{
-	width: 65px;
-	
-}
-
-
-
-div.formButtons{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	width: 100%;
-	margin-bottom: 10px;
-}
-
-div.formButtons input{
-	color: #FFF;
-	background-color: #333399;
-	font-weight: bold;
-	font-size: 16px;
-	border: 0px none;
-	width: 100%;
-	height: 25px;
-}
-
-div.formButtons input:hover {
-cursor: pointer; /* cursor: hand; for IE5 
-}
-*/
-
-/* END EMAIL FORM */
-
-
-
 /** Middle Row **/
 div#middleRow{
 	width: 100%;
@@ -219,15 +141,11 @@ div#upcomingEvents{
 
 div.featured-content{
  width: 942px;
- float: left; 
- margin: 5px 0 5px 5px; 
- padding: 10px;
- border: 2px #000 solid;
- border-radius: 15px;
+*display: inline;
+display: inline-block;
+ zoom: 1;
+ margin: 15px 0; 
  font-size: 18px;
- /*background: #000 url("../images/grim-reaper-black-pattern.jpg") top right repeat-y;*/
-  background: #fff url("../images/headline_bg.jpg") top left repeat;
-
 }
 
 
@@ -241,18 +159,21 @@ div.featured-content li{
 
 
 div.featured-content div.contentText{
-  float: left; 
-/* display: inline-block; */
+  *display: inline;
+  zoom: 1;
+  display: inline-block; 
   width: 575px;
   text-align: left;
   padding: 10px;
- 	height: 100%;  
+  height: 100%; 
+  min-height: 400px;   
+  background: #fff url("../images/headline_bg.jpg") top left repeat;
+  border: 2px #000 solid;
+  border-radius: 15px;
+  margin: 0  0 0 22px;
+  vertical-align: top;
 }
-/*
-div.featured-content div.contentText a{
-  color: white; 
-}
-*/
+
 div.contentText div.eventTitle{
 	font-size:24px;
 	font-style:italic;
@@ -286,9 +207,9 @@ div.featured-content div.contentText div.textLine{
 
 div.featured-content div.contentText div.textLine.rsvp .rsvpLink {
  width: 90%;
- 	display: inline-block;
-*display: inline;
-	zoom: 1;
+ display: inline-block;
+ *display: inline;
+ zoom: 1;
 }
 
 div.featured-content div.contentText div.textLine.rsvp img{
@@ -297,29 +218,51 @@ div.featured-content div.contentText div.textLine.rsvp img{
 
 
 div.featured-content div.eventImages{
-/* display: inline-block; */
-	float: left;
-  margin-left: 11px;
-  width: 300px;
-  margin: 10px;
- 
+ display: inline-block; 
+ *display: inline;
+ zoom: 1;
+ height: 100%;
+ width: 275px;
+ margin: 10px; 
 }
 
-div.featured-content div.eventImages img{
-/*   float: left; */
+div.eventImages div.flipFlyer{
+ display: inline-block; 
+ *display: inline;
+ zoom: 1;
+width: 100%;
+text-align:right;
+}
+
+div.featured-content div.eventImages img.flyer{
   margin-bottom: 15px;
   max-width: 550px;
   max-height: 400px;
-/*  height: 200px; */
+  width: 100%;
   border: 1px #000 solid;
+  margin: auto;
 }
 
-div.featured-content img.tall{
- /* height: 300px; */
+div.featured-content div.eventImages img.flip{
+  width: 33px;
+  cursor:pointer;
 }
 
+/*
+div.eventImages div.flyerFront {
+ background: red;
+}
+
+div.eventImages div.flyerReverse{
+ background: red;
+}
+*/
 
 
+
+.flyerReverse{
+	display: none;
+}
 
 img#howToDress{
 	height: 50px;

@@ -8,9 +8,11 @@
 	<link type="text/css" rel="stylesheet" href="css/events.css" />
 	<link type="text/css" rel="stylesheet" href="css/menu.css" />
 	
-	<script type="text/javascript" src="js/jquery-1.6.4.min.js" ></script>
-	<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js" ></script>
 	<script type="text/javascript" src="js/jqModal.js" ></script>
+	<script type="text/javascript" src="js/jquery.flip.min.js" ></script>
+	
 	<script type="text/javascript" src="jquery-lightbox/js/jquery.lightbox-0.5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery-lightbox/css/jquery.lightbox-0.5.css" media="screen" />
 
@@ -34,7 +36,35 @@
 				
 			});
 		 $('#rsvp').jqm({ ajax: './rsvp.html', trigger: 'a.rsvpTrigger1', closeClass: 'closeWrapper'});
+		 		 		 
+		 $('.flipFlyer').bind("click",function(){		
+			var elem = $(this).siblings(".flyerFront");		
+			if(elem.data('flipped')){
+				// If the element has already been flipped, use the revertFlip method
+				// defined by the plug-in to revert to the default state automatically:			
+				elem.revertFlip();								
+				// Unsetting the flag:
+				elem.data('flipped',false)
+			}else{
+				// Using the flip method defined by the plugin:				
+				elem.flip({
+					direction:'rl',
+					speed: 400,
+					onBefore: function(){
+						// Insert the contents of the .sponsorData div (hidden from view with display:none)
+						// into the clicked .sponsorFlip div before the flipping animation starts:						
+						elem.html(elem.siblings('.flyerReverse').html());
+					}
+				});
+				
+				// Setting the flag:
+				elem.data('flipped',true);
+			}
+			$('a.lightbox').lightBox();
 		});
+		 
+		});
+				
 	</script>
 	
 	<style type="text/css">
@@ -157,6 +187,22 @@
 				
 									
 					<div class="featured-content">
+					<div class="eventImages">
+						<div class="flipFlyer" >
+								<img class="flip" src="images/flip_icon.png" title="See Reverse "/>
+							</div>								
+							<div class="flyerFront">						
+							<a href="images/event/black_enterprise.jpg" rel="lightbox" class="lightbox" title="Black Enterprise">
+								<img class="flyer" src="images/event/black_enterprise_small.jpg" />
+							</a>	
+							</div>
+							<div class="flyerReverse">			
+							<a href="images/event/black_enterprise_back.jpg" rel="lightbox" class="lightbox" title="Black Enterprise">
+								<img class="flyer" src="images/event/black_enterprise_back_small.jpg" />
+							</a>		
+							</div>
+										
+						</div>
 						<div class="contentText">	
 							<div class="eventTitle">Black Enterprise</div>															
 							<div class="textLine"><label>Hosts:</label><div class="text">Good Fellaz &amp; Above Average</div></div>
@@ -189,17 +235,26 @@
 										<img id="howToDress" src="./images/HowToDressV4.png" alt="How to Dress" />
 									</a>									
 							</div>
-						</div>
-						<div class="eventImages">
-							<a href="images/event/black_enterprise.jpg" rel="lightbox" class="lightbox" title="Black Enterprise">
-								<img src="images/event/black_enterprise_small.jpg" />
-							</a>	
-										
-						</div>
+						</div>						
 					</div>					
 					<!-- End event-->	
 					
 					<div class="featured-content">
+						<div class="eventImages">	
+							<div class="flipFlyer" >
+								<img class="flip" src="images/flip_icon.png" title="See Reverse "/>
+							</div>
+							<div class="flyerFront">						
+							<a href="images/event/hardball_front.jpg" rel="lightbox" class="lightbox" title="Hardball: A 1st Fridays Event">
+								<img class="flyer" src="images/event/hardball_front_small.jpg" />
+							</a>
+							</div>
+							<div class="flyerReverse">			
+							<a href="images/event/hardball_back.jpg" rel="lightbox" class="lightbox" title="Hardball: A 1st Fridays Event">
+								<img class="flyer" src="images/event/hardball_back_small.jpg" />
+							</a>	
+							</div>
+						</div>
 						<div class="contentText">	
 							<div class="eventTitle">Hardball: A 1st Fridays Event</div>															
 							<div class="textLine"><label>Hosts:</label><div class="text">Good Fellaz, Absolute Class, &amp; Overachieverz</div></div>
@@ -238,15 +293,7 @@
 								<img id="howToDress" src="./images/HowToDressV4.png" alt="How to Dress" />
 							</a>									
 							</div>
-						</div>
-						<div class="eventImages">							
-							<a href="images/event/hardball_front.jpg" rel="lightbox" class="lightbox" title="Hardball: A 1st Fridays Event">
-								<img src="images/event/hardball_front_small.jpg" />
-							</a>									
-							<a href="images/event/hardball_back.jpg" rel="lightbox" class="lightbox" title="Hardball: A 1st Fridays Event">
-								<img src="images/event/hardball_back_small.jpg" />
-							</a>	
-						</div>
+						</div>						
 					</div>					
 					
 					<!-- End event-->
