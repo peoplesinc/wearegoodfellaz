@@ -23,6 +23,8 @@ $event = $_GET["event"];
     }
 
     // construct events
+	$hardball = new Event('Hardball | 4/6 @ Select Lounge','images/event/hardball/');
+	$black_enterprise = new Event('Black Enterprise | 4/1 @ World Trade Center','images/event/black_enterprise/');
 	$refresh = new Event('Refresh | 3/16 @ Select Lounge','images/event/refresh/');
 	$pardi_gras = new Event('Pardi Gras | 3/2 @ Select Lounge','images/event/pardi_gras/');
 	$coppin_hc = new Event('Coppin Homecoming | 2/18 @ Select Lounge','images/event/coppin_hc/');
@@ -38,6 +40,8 @@ $event = $_GET["event"];
     $summer_salute = new Event('Summer Salute | 9/2 @ Select Lounge','images/event/summer_salute/');	
     $pastel_paradise = new Event('Pastel Paradise | 8/5 @ Select Lounge','images/event/pastel_paradise/');			
 	
+	$events['hardball'] =  $hardball;
+	$events['black_enterprise'] =  $black_enterprise;
 	$events['refresh'] =  $refresh;
 	$events['pardi_gras'] =  $pardi_gras;
 	$events['coppin_hc'] =  $coppin_hc;
