@@ -20,6 +20,15 @@ div.eventSummary{
 	margin: 10px 0;
 }
 
+div#featured-container div.formButtons input{
+	color: #4AED05;
+/* 	background-color: #000; */
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px none;
+	width: 80px;
+/*	height: 25px; */
+}
 
 
 /* End RSVP */
@@ -38,6 +47,11 @@ div.headline-event{
 div.headline-event.internal{
  background: black url("../images/black_headline_bg.jpg") bottom right no-repeat;
  color: white;
+}
+
+div.headline-event.remy{
+ background: white url("../images/remy/remy_v_box_top_small.png") bottom right no-repeat;
+ color: black;
 }
 
 div.headline-event.internal a,  div.headline-event.internal a:visited{

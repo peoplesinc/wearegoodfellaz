@@ -67,7 +67,7 @@ div#middleRow{
 	margin: 25px 0;
 	border: 2px #000 solid;
 	border-radius: 15px;
-	background: #000 url("../images/EventPromoBGRemy.jpg") bottom center no-repeat;
+	background: #000 url("../images/remy/remy_v_red.jpg") bottom center no-repeat;
 	color: white;
 	padding: 15px 0 0 10px;
 	font-size: 16px;
@@ -81,6 +81,7 @@ div#middleRow div.horizontalRow{
 	height: 330px;
 	padding: 10px; 
 	width: 240px;	
+	font-weight: bold;
 
 }
 
@@ -114,7 +115,8 @@ div#birthdayInfo{
 	margin: 0 15px;
 	width: 380px!important;	
  	background: url("../images/bg_content_black.png");
-/*	color: white; */
+	/*color: black;*/ 
+	font-weight: bold;
 }
 
 div#birthdayInfo .birthdaysImage{

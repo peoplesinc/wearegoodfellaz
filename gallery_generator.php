@@ -23,6 +23,8 @@ $event = $_GET["event"];
     }
 
     // construct events
+	$remy_launch = new Event("C'est la Vie | 5/4 @ Select Lounge",'images/event/remy_launch/');
+	$taurus_special = new Event('Taurus Special | 4/20 @ Select Lounge','images/event/taurus_special/');
 	$hardball = new Event('Hardball | 4/6 @ Select Lounge','images/event/hardball/');
 	$black_enterprise = new Event('Black Enterprise | 4/1 @ World Trade Center','images/event/black_enterprise/');
 	$refresh = new Event('Refresh | 3/16 @ Select Lounge','images/event/refresh/');
@@ -40,6 +42,9 @@ $event = $_GET["event"];
     $summer_salute = new Event('Summer Salute | 9/2 @ Select Lounge','images/event/summer_salute/');	
     $pastel_paradise = new Event('Pastel Paradise | 8/5 @ Select Lounge','images/event/pastel_paradise/');			
 	
+
+	$events['remy_launch'] =  $remy_launch;
+	$events['taurus_special'] =  $taurus_special;
 	$events['hardball'] =  $hardball;
 	$events['black_enterprise'] =  $black_enterprise;
 	$events['refresh'] =  $refresh;
