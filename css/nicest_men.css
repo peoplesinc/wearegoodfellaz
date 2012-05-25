@@ -1,0 +1,199 @@
+*{
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+body{
+
+	color: white;
+
+	font-family:Georgia, "Times New Roman", Times, serif;
+
+	background: #000;
+
+}
+
+
+
+a, a:visited, a:active{
+
+	text-decoration: none;
+	outline: none;
+	color: red;
+	border: none;	
+
+}
+
+a:hover{
+	text-decoration: none;
+	outline: none;
+ color: none;	
+ border: 0;
+
+}
+
+
+
+
+div#middleColumn{
+
+	margin: 0 auto;
+
+/*	width: 900px; */
+
+	height: 100%;	
+
+	min-height: 800px;	
+
+}
+
+
+
+div.logoWrapper{
+	text-align: center; 
+	width: 100%;
+}
+
+div.contentWrapper{
+	width: 1024px;
+	min-height: 630px;	
+	margin:  auto;
+	text-align: center;
+	background: url(../images/nicest_men/nicest_men.png) top center no-repeat;
+	padding-top:  200px;
+}
+
+
+
+div.contentWrapper .title{
+	margin: 0;	
+}
+
+div.contentWrapper .title img{
+	height: 80px;
+}
+
+div.contentWrapper .subTitle{
+	margin: 260px 0 0 0;	
+}
+
+div.contentWrapper img.main{
+	height: 500px;	
+}
+
+div#title{
+	width: 300px;
+	text-align:  left;
+	margin: 0 auto;
+}
+
+img#header{
+	
+	width: 400px;
+}
+
+img#logo{
+	margin: 0 auto;
+	height: 140px;
+}
+
+div.contentWrapper div.eventInfo{
+	width: 97%;
+	margin: 10px auto;
+}
+
+div.videoControls {
+	width: 428px;
+	margin: auto;
+	padding-top: 3px;
+}
+
+div.videoControls div.video{
+	width: 135px;
+	display: inline-block;
+	
+}
+
+div.videoControls div.video img{
+	width: 133px;
+}
+
+div.contentWrapper div.eventInfo .details{
+	margin-top: 50px;
+	/* background: url(../images/nicest_men/silver_bg.jpg); */
+}
+
+div.contentWrapper div.eventInfo .details .column{
+	width: 300px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	margin: 3px;
+	font-size: 20px;
+	text-align: left;
+	vertical-align: top;
+	background: url(../images/bg_content_black.png);
+	height: 200px;
+	padding: 3px;
+	
+}
+
+
+div.contentWrapper div.eventInfo .details .column.host{
+
+	width: 340px;
+}
+.host dt, .host dd{
+	display: inline-block;
+	
+}
+
+.host dt, .host dd{
+	display: inline-block;
+	
+}
+
+.host dt, .host dd{
+	width: 165px;
+}
+
+.host dt img{
+	width: 160px;
+	height: 160px;
+}
+
+.host dd{
+	color: red;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.host dd label{
+	color: white!important;
+	font-style: italic;
+	font-size: 12px;
+	margin
+}
+
+div.contentWrapper div.eventInfo .details .column.tix{
+	text-align: center!important;
+	color: red;
+}
+
+div.contentWrapper div.eventInfo .details .column p.buyLink{
+	margin-top: 15px;
+	
+}
+
+div.contentWrapper div.eventInfo .details .column.info label{
+	margin-right: 7px;
+	color: red;
+	width: 70px;
+}
+
+

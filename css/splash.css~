@@ -62,7 +62,7 @@ div.logoWrapper{
 
 
 div.contentWrapper{
-	width: 800px;
+	width: 700px;
 	min-height: 630px;
 	
 	margin:  auto;

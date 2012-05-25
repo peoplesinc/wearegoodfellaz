@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html>
+	  	<head>
+	  		<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+			<title>Good Fellaz :: Baltimore's nightlife professionals</title>
+			<link type="text/css" rel="stylesheet" href="css/nicest_men.css" />
+			<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+
+		<script>
+
+	var videos = new Array();
+	videos[0] = { title: 'The Nicest Men Pt. 1', url: 'http://player.vimeo.com/video/41527155?title=0&amp;byline=0&amp;portrait=0'};
+	
+
+
+	function loadVideo(index){
+		$('#title').text(videos[index].title);
+		$('#tv').attr("src", videos[index].url);
+	}
+
+	$().ready(function() {
+  		loadVideo(0);
+	});
+
+	</script>
+
+	 	 </head>
+	 	<body>
+
+<div id="middleColumn">
+	<div class="logoWrapper"><img id="logo" src="images/good-fellaz-trans.png" title="Good Fellaz" /></div>
+	<div class="contentWrapper">
+	
+		<div class="eventInfo">
+			<div id="heading">Now Playing: <span id="title"></span></div>
+
+			<iframe id="tv" src="./index.html" scrollbars="no"
+							width="428" height="250" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			<div class="videoControls">
+				<div class="video"><a href="javascript:loadVideo(0);"><img src="./images/video/mim_1.jpg" /><br />Nicest Men Pt 1</a></div>
+				<div class="video"><img src="./images/video/mim_1.jpg" /><br />Nicest Men Pt 2</div>
+				<div class="video"><img src="./images/video/mim_1.jpg" /><br />Nicest Men Pt 3</div>
+
+			</div>				
+							
+							
+			<div class="details">		
+				<div class="column info">				
+					<p><label>Date:</label>Friday, June 15, 2012</p>
+					<p><label>Time:</label>9:00PM - 2:00AM</p>
+					<p><label>Where:</label>Select Lounge</p>			
+					<p><label>Sounds:</label>DJ Eskada</p>
+				</div>
+ 				
+				<div class="column host">				
+					<dl class="host">
+						<dt>
+							<img src="./images/logo/henny.gif" />						
+						</dt>
+						<dt>
+							<img src="./images/celebs/vikivalentine.png" />								
+						</dt>
+						<dd><label>Sponsored by</label> Hennessy VS</dd>
+						<dd><label>Hosted by</label> Viki Valentine</dd>
+					</dl>									
+				</div> 				
+ 				<div class="column tix">
+ 					<a target="_blank" href="http://thenicestmen.eventbrite.com">				
+					<h3>&gt;&gt; <span style="color: white">BUY TICKETS</span> &lt;&lt;</h3>
+					<p class="buyLink">					
+						<img id="logo" src="images/nicest_men/ticket.png" title="Buy Tickets" />				
+					</p>
+					</a>						
+				</div>
+			</div>
+		</div>	
+	</div>	
+
+</div>
+
+</body>
+</html>

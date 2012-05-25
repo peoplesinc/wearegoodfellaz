@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
-	 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	 <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 	<title>Good Fellaz :: Baltimore's nightlife professionals</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 	<link type="text/css" rel="stylesheet" href="css/video.css" />
@@ -23,10 +23,10 @@
 	videos[0] = { title: 'Instructions', url: 'http://player.vimeo.com/video/36067248?title=0&amp;byline=0&amp;portrait=0'};
 	videos[1] = { title: 'Cognac Chronicles', url: 'http://player.vimeo.com/video/36003014?title=0&amp;byline=0&amp;portrait=0'};
 	videos[2] = { title: 'Black Enterprise', url: 'http://www.youtube.com/embed/leEfprN1eRE'};
-	videos[3] = { title: 'Pardi Gras', url: 'http://player.vimeo.com/video/37663523? title=0&amp;byline=0&amp;portrait=0'};
-	videos[4] = { title: 'Refresh', url: 'http://player.vimeo.com/video/38448782? title=0&amp;byline=0&amp;portrait=0'};
-
-
+	videos[3] = { title: 'Pardi Gras', url: 'http://player.vimeo.com/video/37663523?title=0&amp;byline=0&amp;portrait=0'};
+	videos[4] = { title: 'Refresh', url: 'http://player.vimeo.com/video/38448782?title=0&amp;byline=0&amp;portrait=0'};
+	videos[5] = { title: 'The Nicest Men Pt. 1', url: 'http://player.vimeo.com/video/41527155?title=0&amp;byline=0&amp;portrait=0'};
+        videos[6] = { title: 'Remy V Launch', url: 'http://player.vimeo.com/video/42420524?title=0&amp;byline=0&amp;portrait=0'};
 
 	function loadVideo(index){
 		$('#title').text(videos[index].title);
@@ -34,73 +34,48 @@
 	}
 
 	$().ready(function() {
-  		loadVideo(2);
+  		loadVideo(6);
 	});
 
 	</script>
 
   </head>
   <body>
-
-    <div id="mainContainer">
-		<div id="banner">
-			<div id="banner-emblem">
-				<img src="images/good-fellaz-trans.png" alt="Good Fellaz"/>
-			</div>
-		</div>
-		<div id="menu">
-			<nav id="globalheader" class="globalheader-js noinset ios3 globalheader-loaded globalheader-loaded">
-				<ul id="globalnav" class="nosearch" role="navigation">
-					<li id="menu-home"><a href="full.html" ><span>Home</span></a></li>
-					<li id="menu-events"><a href="events.html" ><span>Events</span></a></li>
-					<li id="menu-gallery"><a href="gallery.html" ><span>Gallery</span></a></li>
-					<li id="menu-videos"><a href="./video.html"><span>Videos</span></a></li>
-					<li id="menu-philanthropy"><a class="philanthropyTrigger" href="#" ><span>Philanthropy</span></a></li>
-					<li id="menu-about"><a href="team.html" ><span>About Us</span></a></li>
-					<li id="menu-contact"><a class="contactUsTrigger" href="#"><span>Contact Us</span></a></li>
-				</ul>
-			</nav>
-		</div>
-		<div id="content">
-			<div id="leftPanel">
-				<div id="heading">Now Playing: <span id="title"></span></div>
-
-				<div id="tvWrapper">
-					<!-- Iframe for swapping -->
-						<iframe id="tv" src="./index.html" scrollbars="no"
-							width="428" height="250" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</div>
-
-				<div id="channels">
-					<h2 class="title">Videos</h2>
-					<div class="video">
-						<a href="javascript:loadVideo(4);"><img src="./images/video/refresh.jpg" /><br />Refresh</a>
-					</div>
-					<div class="video">
-						<a href="javascript:loadVideo(3);"><img src="./images/video/pardi_gras.jpg" /><br />Pardi Gras</a>
-					</div>
-					<div class="video">
-						<a href="javascript:loadVideo(2);"><img src="./images/video/black_enterprise.jpg" /><br />Black Enterprise</a>
-					</div>
-					<div class="video">
-						<a href="javascript:loadVideo(1);"><img src="./images/video/cognac_chronicles_1.jpg" /><br />Cognac Chronicles</a>
-					</div>
-					<div class="video">
-						<a href="javascript:loadVideo(0);"><img src="./images/video/website_instructions.jpg" /><br />Website Instructions</a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div id="footer">Copyright Driven Entities, LLC</div>
-	</div>
-
-	<!-- Contact Us Modal -->
-		<div class="jqmWindow" id="contactUs">
-			Please wait..
-		</div>
-		<div class="jqmWindow" id="philanthropy">
-			Please wait..
-		</div>
-  </body>
+<div id="mainContainer">
+<div id="banner">
+<div id="banner-emblem"><img src="images/good-fellaz-trans.png" alt="Good Fellaz" /></div>
+</div>
+<div id="menu"><nav id="globalheader" class="globalheader-js noinset ios3 globalheader-loaded globalheader-loaded"> 
+<ul id="globalnav" class="nosearch" role="navigation">
+<li id="menu-home"><a href="full.html"><span>Home</span></a></li>
+<li id="menu-events"><a href="events.html"><span>Events</span></a></li>
+<li id="menu-gallery"><a href="gallery.html"><span>Gallery</span></a></li>
+<li id="menu-videos"><a href="./video.html"><span>Videos</span></a></li>
+<li id="menu-philanthropy"><a class="philanthropyTrigger" href="#"><span>Philanthropy</span></a></li>
+<li id="menu-about"><a href="team.html"><span>About Us</span></a></li>
+<li id="menu-contact"><a class="contactUsTrigger" href="#"><span>Contact Us</span></a></li>
+</ul>
+</nav></div>
+<div id="content">
+<div id="leftPanel">
+<div id="heading">Now Playing: <span id="title"></span></div>
+<div id="tvWrapper"><!-- Iframe for swapping --> <iframe id="tv" src="./index.html" scrollbars="no" width="428" height="250" frameborder="0"></iframe></div>
+<div id="channels">
+<h2 class="title">Videos</h2>
+<div class="video"><a href="javascript:loadVideo(6);"><img src="./images/video/remy_launch.jpg" /><br />Remy V Launch @ Select Lounge</a></div>
+<div class="video"><a href="javascript:loadVideo(5);"><img src="./images/video/mim_1.jpg" /><br />Most Interesting Men I</a></div>
+<div class="video"><a href="javascript:loadVideo(4);"><img src="./images/video/refresh.jpg" /><br />Refresh</a></div>
+<div class="video"><a href="javascript:loadVideo(3);"><img src="./images/video/pardi_gras.jpg" /><br />Pardi Gras</a></div>
+<div class="video"><a href="javascript:loadVideo(2);"><img src="./images/video/black_enterprise.jpg" /><br />Black Enterprise</a></div>
+<div class="video"><a href="javascript:loadVideo(1);"><img src="./images/video/cognac_chronicles_1.jpg" /><br />Cognac Chronicles</a></div>
+<div class="video"><a href="javascript:loadVideo(0);"><img src="./images/video/website_instructions.jpg" /><br />Website Instructions</a></div>
+</div>
+</div>
+</div>
+<div id="footer">Copyright Driven Entities, LLC</div>
+</div>
+<p><!-- Contact Us Modal --></p>
+<div class="jqmWindow" id="contactUs">Please wait..</div>
+<div class="jqmWindow" id="philanthropy">Please wait..</div>
+</body>
 </html>

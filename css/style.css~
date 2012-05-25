@@ -289,6 +289,58 @@ div#philanthropy{
  margin-left: -175px;
 }
 
+div.rsvpLink{
+	cursor: pointer;
+}
+
 div#rsvp{
 		width: 450px;
+}
+
+div#rsvp div.closeWrapper{
+	width: 100%;
+	text-align: right;
+	cursor:pointer;
+}
+
+div#rsvp div.formButtons input{
+	color: #4AED05;
+/* 	background-color: #000; */
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px none;
+	width: 100px;
+/*	height: 25px; */
+}
+
+div.emailForm{
+ padding: 10px 0 0 0;
+ width: 300px;
+ margin: auto;
+ font-size: 17px;
+}
+
+
+div.emailForm div.formLine{
+ padding-top: 5px;
+ margin-left: 5px;
+}
+
+div.emailForm label{
+	width: 65px;
+	font-weight: bold;	
+}
+
+
+div.emailForm div.formButtons{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+div.formButtons input:hover {
+cursor: pointer; /* cursor: hand; for IE5 */
 }
