@@ -5,9 +5,10 @@ div#content{
 
 div#leftPanel{
 	 width: 690px; 
-	margin-top: 15px;
-	background: #ccc;
+
+	background: #000;
 	border: none;
+	
 }
 
 h2.eventTitle{
@@ -32,6 +33,92 @@ div#featured-container div.formButtons input{
 
 
 /* End RSVP */
+div.headlines{
+background: url(../images/BrushedMetal2.jpg);
+width: 680px;
+margin: 5px auto;
+}
+
+
+div.month img.monthGraphic{
+	margin: auto;
+}
+
+
+div.headline-month{
+ text-align:left;
+}
+
+div.headline-month div.month{
+	width: 150px;
+	display: inline-block;
+	text-align:center;
+	padding: 25px 0 0 0;
+/*	height: 100%; */
+	color: white;
+	margin: auto;
+}
+
+div.headline-month div.events{
+	display: inline-block;
+	vertical-align:top;
+	padding: 3px;
+	width: 500px;
+}
+
+
+div.headline-month div.events .event{
+	display: inline-block;
+	vertical-align:top;
+	width: 155px; 
+	height: 200px;
+	font-size: 16px;
+	background: url(../images/calendar_bg_blck.png);
+}
+
+div.headline-month div.events .event.internal{
+	background: url(../images/calendar_bg_green.png);
+}
+
+div.headline-month div.events .event .dayOfWeek{
+	display: inline-block;
+	width: 35%;
+	text-align:left;
+	color: #4AED05;
+	font-size:20px;
+	padding: 0 0 0 10px;
+}
+
+div.headline-month div.events .event.internal .dayOfWeek{
+	color: black;
+}
+
+div.headline-month div.events .event .date{
+	display: inline-block;
+	width: 40%;
+	font-size: 32px;
+	text-align:right;
+	color: white;
+}
+
+
+
+div.headline-month div.events .event .title{
+	height: 160px;
+	vertical-align: bottom;
+	padding: 30px 0 0 0;
+	width: 80%;
+	margin: 0 0 0 10px;
+}
+
+div.divider {
+	margin: 12px 0;
+}
+
+div.divider img{
+	width: 150px;
+}
+
 
 div.headline-event{
  text-align: left;
@@ -117,9 +204,10 @@ div.headline-event div.rsvp img{
 }
 
 div#ad{
-	padding: 0 0 10px 0;
+	/* padding: 0 0 10px 0; */
 }
 
 div#ad img{
-	width: 100%;
+	width: 280px;
+	height: 325px;
 }

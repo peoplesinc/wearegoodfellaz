@@ -29,6 +29,12 @@ a, a:visited, a:active{
 
 }
 
+a.backLink, aa.backLink:visited, a.backLink:active{
+	color: white;
+	font-size: 20px;
+	text-align:left;
+}
+
 a:hover{
 	text-decoration: none;
 	outline: none;
