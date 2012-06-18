@@ -29,6 +29,12 @@ a, a:visited, a:active{
 
 }
 
+a.backLink, aa.backLink:visited, a.backLink:active{
+	color: white;
+	font-size: 20px;
+	text-align:left;
+}
+
 a:hover{
 	text-decoration: none;
 	outline: none;
@@ -120,7 +126,7 @@ div.videoControls div.video{
 }
 
 div.videoControls div.video img{
-	width: 130px;
+	width: 133px;
 }
 
 div.contentWrapper div.eventInfo .details{
@@ -129,7 +135,7 @@ div.contentWrapper div.eventInfo .details{
 }
 
 div.contentWrapper div.eventInfo .details .column{
-	width: 300px;
+	width: 230px;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;
@@ -139,14 +145,14 @@ div.contentWrapper div.eventInfo .details .column{
 	vertical-align: top;
 	background: url(../images/bg_content_black.png);
 	height: 200px;
-	padding: 3px;
+	
 	
 }
 
-
+/*
 div.contentWrapper div.eventInfo .details .column.host{
 
-	width: 340px;
+ /*width: 340px; 
 }
 .host dt, .host dd{
 	display: inline-block;
@@ -179,6 +185,8 @@ div.contentWrapper div.eventInfo .details .column.host{
 	font-size: 12px;
 	margin
 }
+
+*/
 
 div.contentWrapper div.eventInfo .details .column.tix{
 	text-align: center!important;

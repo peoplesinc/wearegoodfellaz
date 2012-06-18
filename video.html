@@ -26,7 +26,8 @@
 	videos[3] = { title: 'Pardi Gras', url: 'http://player.vimeo.com/video/37663523?title=0&amp;byline=0&amp;portrait=0'};
 	videos[4] = { title: 'Refresh', url: 'http://player.vimeo.com/video/38448782?title=0&amp;byline=0&amp;portrait=0'};
 	videos[5] = { title: 'The Nicest Men Pt. 1', url: 'http://player.vimeo.com/video/41527155?title=0&amp;byline=0&amp;portrait=0'};
-        videos[6] = { title: 'Remy V Launch', url: 'http://player.vimeo.com/video/42420524?title=0&amp;byline=0&amp;portrait=0'};
+    videos[6] = { title: 'Remy V Launch', url: 'http://player.vimeo.com/video/42420524?title=0&amp;byline=0&amp;portrait=0'};
+	videos[7] = { title: 'The Nicest Men Pt. 2', url: 'http://player.vimeo.com/video/43665598?title=0&amp;byline=0&amp;portrait=0'};
 
 	function loadVideo(index){
 		$('#title').text(videos[index].title);
@@ -34,7 +35,7 @@
 	}
 
 	$().ready(function() {
-  		loadVideo(6);
+  		loadVideo(7);
 	});
 
 	</script>
@@ -62,8 +63,9 @@
 <div id="tvWrapper"><!-- Iframe for swapping --> <iframe id="tv" src="./index.html" scrollbars="no" width="428" height="250" frameborder="0"></iframe></div>
 <div id="channels">
 <h2 class="title">Videos</h2>
+<div class="video"><a href="javascript:loadVideo(7);"><img src="./images/video/nicest_men_2.jpg" /><br />The Nicest Men Pt. 2</a></div>
 <div class="video"><a href="javascript:loadVideo(6);"><img src="./images/video/remy_launch.jpg" /><br />Remy V Launch @ Select Lounge</a></div>
-<div class="video"><a href="javascript:loadVideo(5);"><img src="./images/video/mim_1.jpg" /><br />Most Interesting Men I</a></div>
+<div class="video"><a href="javascript:loadVideo(5);"><img src="./images/video/mim_1.jpg" /><br />The Nicest Men I</a></div>
 <div class="video"><a href="javascript:loadVideo(4);"><img src="./images/video/refresh.jpg" /><br />Refresh</a></div>
 <div class="video"><a href="javascript:loadVideo(3);"><img src="./images/video/pardi_gras.jpg" /><br />Pardi Gras</a></div>
 <div class="video"><a href="javascript:loadVideo(2);"><img src="./images/video/black_enterprise.jpg" /><br />Black Enterprise</a></div>

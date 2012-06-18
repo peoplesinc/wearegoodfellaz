@@ -72,22 +72,7 @@
 						<!-- Container block-->
 						<!--
 						<div class="cr-content-container" id="content-1" style="display:block;">
-							<img src="images/event/remy_v_launch_bg.jpg" class="cr-img"/>														
-							<div class="cr-content">
-								<div class="cr-content-headline">									
-								</div>
-								<div class="cr-content-text">
-									<h2>C'est la Vie I</h2>
-									<div class="eventSummary">The OFFICIAL Baltimore Launch party of Remy Martin V<br />										
-										<h3>Hosted by Remy Martin</h3>
-										<h3>An invite only affair</h3>
-									</div>									
-								</div>
-							</div>
-						</div>						
-						-->
-						<div class="cr-content-container" id="content-2" style="display:block;">
-							<img src="images/event/luau.jpg" class="cr-img"/>							
+						<img src="images/event/luau.jpg" class="cr-img"/>							
 							<div class="cr-content">
 								<div class="cr-content-headline">									
 								</div>
@@ -95,7 +80,7 @@
 									<h2>Finesse Fridays: The Luau</h2>
 									<div class="eventSummary">Friday, June 1st at Select Lounge</div>
 									
-									<form action='https://madmimi.com/signups/subscribe/46262' target="_blank" method='post'>
+									<form action='https://madmimi.com/signups/subscribe/52166' target="_blank" method='post'>
 										<div class="emailForm">
 											<div class="formLine">
 												<label for='signup_name'>Name</label>
@@ -111,6 +96,22 @@
 										</div>
 									</form>	
 								</div>
+							</div>												
+						</div>	
+						-->					
+
+						<div class="cr-content-container" id="content-2" style="display:block;">
+								<img src="images/nicest_men/nicest_men_flyer.jpg" class="cr-img"/>														
+							<div class="cr-content">
+								<div class="cr-content-headline">									
+								</div>
+								<div class="cr-content-text">
+									<h2>The Nicest Men</h2>
+									<div class="eventSummary">Birthday Celebration for Good Fellaz Reem &amp; Shellz<br />										
+										<h3>Visit the Campaign</h3>
+										<a href="./nicest_men.html">The Nicest Men...</a>
+									</div>									
+								</div>
 							</div>
 						</div>
 
@@ -119,7 +120,7 @@
 						<!-- cr-content-container -->				
 						
 						<div class="cr-content-container" id="content-3" style="display:none;">
-							<img src="images/event/birthday_banner_remy.jpg" class="cr-img"/>														
+							<img src="images/birthday_cake_banner.jpg" class="cr-img"/>														
 							<div class="cr-content">
 								<div class="cr-content-headline">									
 								</div>
@@ -154,20 +155,21 @@
 					<div class="cr-thumbs">			
 <!--
 						<div data-content="content-1" class="cr-selected">
-							<img src="images/event/remy_v_launch_small.jpg"/>
-							<h4>Remy V Launch - 5/4</h4>
+							<img src="images/event/luau_small.jpg"/>
+							<h4>The Luau - 6/1</h4>		
 						</div>
 					-->
 						<div data-content="content-2" class="cr-selected">
-							<img src="images/event/luau_small.jpg"/>
-							<h4>The Luau - 6/1</h4>						
+							<img src="images/nicest_men/nicest_men_flyer_small.jpg"/>
+							<h4>The Nicest Men - 6/15</h4>						
 						</div>
 
 
 						<div data-content="content-3" >
-							<img src="images/event/birthday_banner_remy_small.jpg"/>
+							<img src="images/birthday_thumb.jpg"/>
 							<h4>Plan YOUR Birthday</h4>						
 						</div>
+						
 						<div data-content="content-4" >
 							<img src="images/venues/table_thumb.jpg"/>
 							<h4>Book your VIP Table</h4>						
@@ -178,111 +180,86 @@
 		</div>
 		<div id="content">
 			<div id="leftPanel">
-			<h4 class="header gray">Latest Headlines</h4>			
+		<h4 class="header gray">Upcoming Events</h4>	
 			
 			
-			
-				
-							 			
-									 			
-<!--			
-			<div class="headline-event internal">
-				<div class="event-title"><a href="./events.html">C'est la Vie: A 1st Fridays Event</a></div>
-				<div class="event-date">May 4, 2012</div>
-				<div class="event-time">10:00pm - 2:00am</div>
-				<div class="event-location">Select Lounge<br />415 N. Paca St</div>
-				<div class="event-details">Hosted by Remy Martin</div>
-				<div class="rsvp"><a class="rsvpTrigger1" href="javascript:void(0);"><img src="./images/free_pass.png"/></a></div> 
-			</div>				
-			-->
-			
-								
-			<div class="headline-event internal">
-				<div class="event-title"><a href="./events.html">The Luau: A Finesse Fridays Event</a></div>
-				<div class="event-date">June 1, 2012</div>
-				<div class="event-time">9:00pm - 2:00am</div>
-				<div class="event-location">Select Lounge<br />415 N. Paca St</div>
-				<div class="event-details">Details coming soon</div>
-				<div class="rsvp"><a class="rsvpTrigger1" href="javascript:void(0);"><img src="./images/free_pass.png"/></a></div>
-			</div>	
-			<div class="headline-event internal">
-				<div class="event-title"><a href="./events.html">The Nicest Men: A Finesse Fridays Event</a></div>
-				<div class="event-date">June 15, 2012</div>
-				<div class="event-time">9:00pm - 2:00am</div>
-				<div class="event-location">Select Lounge<br />415 N. Paca St</div>
-				<div class="event-details">The Birthday Celebration for Reem &amp; Shellz. Hosted by @VikiValentine</div>
-				 
-			</div>		
-			
-			
-			<div class="headline-event">
-				<div class="event-title"><a target="_blank"  href="http://www.lyricoperahouse.com">Alvin Ailey American Dance Theater</a></div>
-				<div class="event-date">May 22 - 23, 2012</div>
-				<div class="event-time">varies</div>
-				<div class="event-location">Modell Performing Arts Center at the Lyric
+			<div class="headlines"> 
+			<div class="headline-month">
+				<div class="month">
+					<img class="monthGraphic" src="./images/june.png" />
 				</div>
-				<div class="event-details"></div>			
-			</div>
-			<div class="headline-event">
-				<div class="event-title"><a target="_blank"  href="http://www.universoulcircus.com/">Universoul Circus</a></div>
-				<div class="event-date">May 22 - 27, 2012</div>
-				<div class="event-time">varies</div>
-				<div class="event-location">Security Square Mall
-				</div>
-				<div class="event-details"></div>			
-			</div>
-			<div class="headline-event">
-				<div class="event-title"><a target="_blank"  href="http://www.africanamericanfestival.net/">African American Festival 2012</a></div>
-				<div class="event-date">May 22 - 27, 2012</div>
-				<div class="event-time">varies</div>
-				<div class="event-location">M&amp;T Bank Stadium<br />
-				1101 Russel Street<br />
-				Lots B &amp; C<br />
-				Baltimore, MD 21230
-				</div>
-				<div class="event-details"></div>			
-			</div>
-			
-			<div class="headline-event">
-				<div class="event-title"><a target="_blank"  href="http://www.lyricoperahouse.com/showdetail.php?showing_id=83">Memorial Day Weekend Comedy Jam starring Cedric the Entertainer and Friends</a></div>
-				<div class="event-date">May 27, 2012</div>
-				<div class="event-time">varies</div>
-				<div class="event-location">Security Square Mall
-				</div>
-				<div class="event-details"></div>			
-			</div>
-			<div class="headline-event">
-				<div class="event-title"><a target="_blank"  href="http://theflywire.com/lifestyle_events_Display.cfm?RecordID=287">The Flywire White Tie Affair </a></div>
-				<div class="event-date">June 10, 2012</div>
-				<div class="event-time">5:00 PM - 10:00 PM</div>
-				<div class="event-location">Secret Location
-				</div>
-				<div class="event-details"></div>			
-			</div>			
-			<div class="headline-event">
-				<div class="event-title"><a target="_blank"  href="http://tickets.piersixpavilion.com">92Q Summer Jam featuring Mindless Behavior</a></div>
-				<div class="event-date">July 13th, 2012</div>
-				<div class="event-time"></div>
-				<div class="event-location">Pier 6
-				</div>
-				<div class="event-details"></div>			
-			</div>
-			
-			</div><div id="rightPanel">
-			<div id="mailSignup">
-					<form target="_blank" method="post" action="http://madmimi.com/signups/subscribe/24006">
-						<h4 class="header social">Join our mailing list!</h4>
-						<div class="mailingListForm">
-						<div class="formLine"><label for="signup_name">Name:</label> <input class="textInput" name="signup[name]" id="signup_name"></div>
-						<div class="formLine"><label for="signup_email">Email:</label> <input class="textInput" name="signup[email]" id="signup_email"></div>
-						<div class="formLine"><label for="signup_phone">Birth Date:</label> <input class="textInput" name="signup[phone]" id="signup_phone"></div>
-						<div class="formButtons"><input name="commit" value="Sign Up" type="submit" class="button"></div>
+				<div class="events">
+						
+						<div class="event internal">
+							<div class="dayOfWeek">F</div>
+							<div class="date">8</div>
+							<div class="title"><a href="./events.html">Mercy: A Finesse Fridays Event</a></div>
 						</div>
-					</form>
+						<div class="event">
+							<div class="dayOfWeek">Su</div>
+							<div class="date">10</div>
+							<div class="title"><a target="_blank"  href="http://theflywire.com/lifestyle_events_Display.cfm?RecordID=287">The Flywire White Tie Affair</a></div>
+						</div>
+						<div class="event internal">
+							<div class="dayOfWeek">F</div>
+							<div class="date">15</div>
+							<div class="title"><a href="./nicest_men.html">The Nicest Men: A Finesse Fridays Event</a></div>
+						</div>
+						<div class="event internal">
+							<div class="dayOfWeek">W</div>
+							<div class="date">20</div>
+							<div class="title"><a href="./events.html">Grand Opening of Happy Hour at Museum</a></div>
+						</div>
+						<div class="event internal">
+							<div class="dayOfWeek">F</div>
+							<div class="date">22</div>
+							<div class="title"><a href="./events.html"> A Finesse Fridays Event</a></div>
+						</div>
+						<div class="event">
+							<div class="dayOfWeek">S</div>
+							<div class="date">30</div>
+							<div class="title"><a href="http://lwf15.org/">LaQuan Williams Charity Basketbal Game</a></div>
+						</div>
 				</div>
-				<div id="ad">
-					<img src="./images/remy/remy_v.jpg" />
+			</div>				
+			<div class="divider"><img src="./images/divider.png" /></div>
+			<div class="headline-month">
+				<div class="month">
+					<img class="monthGraphic" src="./images/july.png" />
 				</div>
+				<div class="events">
+						<div class="event internal">
+							<div class="dayOfWeek">Tu</div>
+							<div class="date">3</div>
+							<div class="title"><a href="./events.html">Pre Holiday Party at Red Maple</a></div>
+						</div>
+						<div class="event internal">
+							<div class="dayOfWeek">W</div>
+							<div class="date">4</div>
+							<div class="title"><a href="./events.html">Customer Apprecation Day Party</a></div>
+						</div>
+						<div class="event internal">
+							<div class="dayOfWeek">F</div>
+							<div class="date">6</div>
+							<div class="title"><a href="./events.html">A First Fridays Event</a></div>
+						</div>
+						
+						<div class="event">
+							<div class="dayOfWeek">F</div>
+							<div class="date">13</div>
+							<div class="title"><a target="_blank"  href="http://tickets.piersixpavilion.com">92Q Summer Jam featuring Mindless Behavior</a></div>
+						</div>			
+						<div class="event">
+							<div class="dayOfWeek">F</div>
+							<div class="date">20</div>
+							<div class="title"><a target="_blank"  href="www.artscape.org">Artscape Begins</a></div>
+						</div>					
+				</div>
+				</div><!-- end headlines -->
+			</div>				
+						
+			</div><div id="rightPanel">
+			
 			 <!-- Divs must NOT be separated by white space -->
 			<!--
 				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -322,7 +299,7 @@
 new TWTR.Widget({
   version: 2,
   type: 'search',
-  search: 'from:wearegoodfellaz OR to:wearegoodfellaz OR #cognaccrew OR #hennygang OR #1stFridaysAtSelect OR ((#cloud9 OR #1stFriday OR #1stFridays) (to:selectlounge OR "select lounge"))',
+  search: 'from:wearegoodfellaz OR to:wearegoodfellaz OR #cognaccrew OR #hennygang OR #1stFridaysAtSelect OR (Friday (to:selectlounge OR "select lounge"))',
   interval: 5000,
   title: 'GoodFellaz',
   subject: 'WeAreGoodFellaz',
@@ -350,9 +327,24 @@ new TWTR.Widget({
   }
 }).render().start();
 </script>
+
+				<div id="ad">
+					<img src="./images/remy/remy_v.jpg" />
+				</div>
 	   			<div id="fbPlugin"> 	
 				
-			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fwearegoodfellaz&amp;width=280&amp;colorscheme=dark&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=590" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:590px;" allowTransparency="true"></iframe>
+			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fwearegoodfellaz&amp;width=280&amp;colorscheme=dark&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=500" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:500px;" allowTransparency="true"></iframe>
+				</div>
+				<div id="mailSignup">
+					<form target="_blank" method="post" action="http://madmimi.com/signups/subscribe/24006">
+						<h4 class="header social">Join our mailing list!</h4>
+						<div class="mailingListForm">
+						<div class="formLine"><label for="signup_name">Name:</label> <input class="textInput" name="signup[name]" id="signup_name"></div>
+						<div class="formLine"><label for="signup_email">Email:</label> <input class="textInput" name="signup[email]" id="signup_email"></div>
+						<div class="formLine"><label for="signup_phone">Birth Date:</label> <input class="textInput" name="signup[phone]" id="signup_phone"></div>
+						<div class="formButtons"><input name="commit" value="Sign Up" type="submit" class="button"></div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

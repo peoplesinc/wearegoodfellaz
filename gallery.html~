@@ -37,6 +37,7 @@
 	eventNames[15] = "hardball";
 	eventNames[16] = "taurus_special";
 	eventNames[17] = "remy_launch";
+	eventNames[18] = "higher_learning";
 	
 
 	var instanceOne = new ImageFlow();
@@ -108,6 +109,7 @@
 					<h2>Select an Event</h2>
 					</div>
 					<div class="imageflow" id="eventmenu" height="300px">
+							<img src="images/event/preakness_party_small.jpg" alt="Torrey Smith's Preakness Party | Friday, May 18, 2012 @ Select Lounge" />
 							<img src="images/event/remy_v_revel_small.jpg" alt="C'est la Vie #RemyVLaunch | Friday, May 4, 2012 @ Select Lounge" />
 							<img src="images/event/taurus_special_small.jpg" alt="Taurus Special | Friday, April 20, 2012 @ Select Lounge" />
 							<img src="images/event/hardball_front_small.jpg" alt="Hardball | Friday, April 6, 2012 @ Select Lounge" />

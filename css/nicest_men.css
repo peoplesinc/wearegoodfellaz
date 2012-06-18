@@ -127,6 +127,7 @@ div.videoControls div.video{
 
 div.videoControls div.video img{
 	width: 133px;
+	height: 80px;
 }
 
 div.contentWrapper div.eventInfo .details{
@@ -135,7 +136,7 @@ div.contentWrapper div.eventInfo .details{
 }
 
 div.contentWrapper div.eventInfo .details .column{
-	width: 300px;
+	width: 230px;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;
@@ -145,15 +146,17 @@ div.contentWrapper div.eventInfo .details .column{
 	vertical-align: top;
 	background: url(../images/bg_content_black.png);
 	height: 200px;
-	padding: 3px;
+	
 	
 }
 
 
 div.contentWrapper div.eventInfo .details .column.host{
 
-	width: 340px;
+ width: 450px; 
 }
+
+/*
 .host dt, .host dd{
 	display: inline-block;
 	
@@ -185,6 +188,8 @@ div.contentWrapper div.eventInfo .details .column.host{
 	font-size: 12px;
 	margin
 }
+
+*/
 
 div.contentWrapper div.eventInfo .details .column.tix{
 	text-align: center!important;

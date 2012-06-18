@@ -44,6 +44,7 @@ $event = $_GET["event"];
     $pastel_paradise = new Event('Pastel Paradise | 8/5 @ Select Lounge','images/event/pastel_paradise/');			
 	
 
+	$events['higher_learning'] =  $higher_learning;
 	$events['remy_launch'] =  $remy_launch;
 	$events['taurus_special'] =  $taurus_special;
 	$events['hardball'] =  $hardball;

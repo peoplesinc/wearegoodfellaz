@@ -23,6 +23,7 @@ $event = $_GET["event"];
     }
 
     // construct events
+    $luau = new Event("The Luau | 6/1 @ Select Lounge",'images/event/luau/');
 	$higher_learning = new Event("Torrey Smith's Preakness Party | 5/18 @ Select Lounge",'images/event/higher_learning/');
 	$remy_launch = new Event("C'est la Vie | 5/4 @ Select Lounge",'images/event/remy_launch/');
 	$taurus_special = new Event('Taurus Special | 4/20 @ Select Lounge','images/event/taurus_special/');
@@ -44,6 +45,7 @@ $event = $_GET["event"];
     $pastel_paradise = new Event('Pastel Paradise | 8/5 @ Select Lounge','images/event/pastel_paradise/');			
 	
 
+	$events['luau'] =  $luau;
 	$events['higher_learning'] =  $higher_learning;
 	$events['remy_launch'] =  $remy_launch;
 	$events['taurus_special'] =  $taurus_special;

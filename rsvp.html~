@@ -1,17 +1,17 @@
-<form id="modalRsvpForm" action='https://madmimi.com/signups/subscribe/46262' target="_blank" method='post'>
-				<div class="closeWrapper">Close</div>
-					<h2>RSVP</h2>
-										<div class="emailForm">
-											<div class="formLine">
-												<label for='signup_name'>Name</label>
-												<input id='signup_name' name='signup[name]' type='text' />
-											</div>
-											<div class="formLine">
-												<label for='signup_email'>Email</label>
-												<input id='signup_email' name='signup[email]' type='text' />
-											</div>
-											<div class="formButtons">
-												<input name='commit' class='button' type='image' src="./images/free_pass.png" value='FREE PASS' />																								
-											</div>
-										</div>
-									</form>	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Untitled document</title>
+</head>
+<body>
+<form id="modalRsvpForm" action="https://madmimi.com/signups/subscribe/54035" target="_blank" method="post">
+<div class="closeWrapper">Close</div>
+<h2>RSVP</h2>
+<div class="emailForm">
+<div class="formLine"><label for="signup_name">Name</label> <input id="signup_name" name="signup[name]" type="text" /></div>
+<div class="formLine"><label for="signup_email">Email</label> <input id="signup_email" name="signup[email]" type="text" /></div>
+<div class="formButtons"><input name="commit" class="button" type="image" src="./images/free_pass.png" value="FREE PASS" /></div>
+</div>
+</form>
+</body>
+</html>

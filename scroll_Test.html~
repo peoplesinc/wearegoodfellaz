@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+	 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<title>Good Fellaz :: Baltimore's nightlife professionals</title>
+
+	
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js" ></script>
+	<script type="text/javascript" src="js/jqModal.js" ></script>
+	<script type="text/javascript" src="js/jquery.flip.min.js" ></script>
+	
+	<!-- Scrolling DIV -->
+	<link rel="Stylesheet" type="text/css" href="SmoothDivScroll-1.1/css/smoothDivScroll.css" />
+	
+	<!-- Smooth Div Scroll 1.1 - minified for faster loading-->
+	<script src="SmoothDivScroll-1.1/js/jquery.smoothDivScroll-1.1-min.js" type="text/javascript"></script>
+
+
+
+	
+	<script type="text/javascript">
+$(window).load(function() {
+			$("div#makeMeScrollable").smoothDivScroll({
+				autoScroll: "onStart",
+				autoScrollDirection: "backandforth",
+				autoScrollInterval: 30,
+				autoScrollStep: 1
+				
+			});		 
+		 
+		});
+				
+	</script>
+				
+	</script>
+	
+	<style type="text/css">
+	#makeMeScrollable
+		{
+			width:100%;
+			height: 200px;
+			position: relative;
+			border: 2px #ccc solid;
+		}
+		
+		#makeMeScrollable div.scrollableArea img
+		{
+			position: relative;
+			float: left;
+			height: 200px;
+			margin: 0;
+			padding: 0;
+		}
+		
+	</style>
+  </head>
+  <body>	
+    <div id="mainContainer">		
+    <div id="banner">			
+			<div id="banner-emblem">
+				<img src="images/good-fellaz-trans.png" alt="Good Fellaz"/>				
+			</div>
+		
+		</div>
+		<div id="menu">
+			<nav id="globalheader" class="globalheader-js noinset ios3 globalheader-loaded globalheader-loaded">
+				<ul id="globalnav" class="nosearch" role="navigation">
+					<li id="menu-home"><a href="full.html" ><span>Home</span></a></li>
+					<li id="menu-events"><a href="events.html" ><span>Events</span></a></li>					
+					<li id="menu-gallery"><a href="gallery.html" ><span>Gallery</span></a></li>
+					<li id="menu-videos"><a href="./video.html"><span>Videos</span></a></li>
+					<li id="menu-philanthropy"><a class="philanthropyTrigger" href="#" ><span>Philanthropy</span></a></li>
+					<li id="menu-about"><a href="team.html" ><span>About Us</span></a></li>					
+					<li id="menu-contact"><a class="contactUsTrigger" href="#"><span>Contact Us</span></a></li>				
+				</ul>			
+			</nav>		
+		</div>
+		<div id="content">
+			<div id="leftPanel">
+				<div id="makeMeScrollable">
+					<div class="scrollWrapper">						
+						   <div class="scrollableArea">
+						   <img src="images/venues/select_lounge_3.jpg" alt="Demo image" />
+						   <img src="images/celebs/ray_rice.jpg" alt="Demo image" />
+		   				<img src="images/venues/select_lounge_2.jpg" alt="Demo image" />   						
+							<img src="images/celebs/torrey.jpg" alt="Demo image" />							
+							<img src="images/remy/team_1.jpg" alt="Demo image" />					   	   
+   						<img src="images/celebs/cam.jpg" alt="Demo image" />					   	
+					   	<img src="images/venues/party_2.jpg" alt="Demo image" />					   	   						   
+   						<img src="images/celebs/vonta.jpg" alt="Demo image" />												   
+						   <img src="images/venues/party_5.jpg" alt="Demo image" />
+						   <img src="images/celebs/upshaw.jpg" alt="Demo image" />						   
+						   <img src="images/venues/party_3.jpg" alt="Demo image" />						   
+						   <img src="images/venues/patron_table.jpg" alt="Demo image" />
+						   <img src="images/celebs/dawn_3.jpg" alt="Demo image" />							  
+						   <img src="images/venues/select_lounge_4.jpg" alt="Demo image" />												   
+						</div>
+					</div>		  
+				</div>																																					
+			</div><!-- End Left Panel -->																	
+		<div id="footer">Copyright Driven Entities, LLC</div>
+	</div>	
+  </div>
+  
+  	
+  </body>
+</html>
