@@ -5,7 +5,7 @@
 }
 
 body{
- background: #E0DFDB url('../images/Two_1.jpg') ;  
+ background: #000  url('../images/Two_1.jpg') ;  
   margin-top: 0px;
   margin-bottom: 20px;
   text-align: center;
@@ -92,14 +92,14 @@ color: black;
 div#featured {
  	/*background: #fff;
     border: 1px solid #999999; */
-    height: 350px;
+/*    height: 380px; */
     width: 980px; 
     margin: 10px auto 0 auto;
 	text-align:center;
 }
 
 div#featured-container{
-  height: 330px;
+/*  height: 440px; */
   text-align: center;
 }
 
@@ -343,4 +343,12 @@ div.emailForm div.formButtons{
 
 div.formButtons input:hover {
 cursor: pointer; /* cursor: hand; for IE5 */
+}
+
+div.divider {
+	margin: 12px 0;
+}
+
+div.divider img{
+	width: 150px;
 }

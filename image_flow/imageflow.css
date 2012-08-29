@@ -15,6 +15,7 @@
 		position:absolute;
 		top:0px;
 		visibility:hidden;
+		max-height: 270px; 
 		-ms-interpolation-mode:bicubic; /* Enables bicubic image resampling for the IE7 */
 	}
 	.imageflow p {

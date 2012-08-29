@@ -19,43 +19,54 @@
 
 	<script>
 	var eventNames = new Array();
-	eventNames[0] = "my_first";	
-	eventNames[1] = "pastel_paradise";
-	eventNames[2] = "venus_vs_mars";
-	eventNames[3] = "summer_salute";
-	eventNames[4] = "morgan_hc";
-	eventNames[5] = "milestone";
-	eventNames[6] = "midnight";
-	eventNames[7] = "naughty_n_nice";
-	eventNames[8] = "xii";
-	eventNames[9] = "lbd";		
-	eventNames[10] = "royal";
-	eventNames[11] = "coppin_hc";
-	eventNames[12] = "pardi_gras";
-	eventNames[13] = "refresh";
-	eventNames[14] = "black_enterprise";
-	eventNames[15] = "hardball";
-	eventNames[16] = "taurus_special";
-	eventNames[17] = "remy_launch";
-	eventNames[18] = "higher_learning";
-	eventNames[19] = "luau";
+	/*eventNames.push("my_first");	
+	eventNames.push("pastel_paradise");
+	eventNames.push("venus_vs_mars");
+	eventNames.push("summer_salute");
+	eventNames.push("morgan_hc");
+	eventNames.push("milestone");
+	eventNames.push("midnight");
+	eventNames.push("naughty_n_nice");
+	eventNames.push("xii"); 
+	eventNames.push("lbd");	*/	
+	eventNames.push("royal");
+	eventNames.push("coppin_hc");
+	eventNames.push("pardi_gras");
+	eventNames.push("refresh");
+	eventNames.push("black_enterprise");
+	eventNames.push("hardball");
+	eventNames.push("taurus_special");
+	eventNames.push("remy_launch");
+	eventNames.push("higher_learning");
+	eventNames.push("luau");
+	eventNames.push("nicest_men");
+	eventNames.push("spring_finale");
+	eventNames.push("fifth_element");
+	eventNames.push("stars_and_stripes");
+	eventNames.push("carnival");
+	eventNames.push("inked_up");
+	eventNames.push("tight_dresses");
+	eventNames.push("luau_2");
+	eventNames.push("body_language");
+	eventNames.push("the_professional");
 	
 
 	var instanceOne = new ImageFlow();
 		domReady(function()
 		{			
 			instanceOne.init({ 
-				ImageFlowID: 'eventmenu', 
-				reflectionP: .2,
+				ImageFlowID: 'eventmenu', 				
 				aspectRatio: 3.5,
 				buttons: true ,
 				imagePath: '../',
-				onClick: function() {refreshGallery(eventNames.length - (instanceOne.imageID + 1))}, 
-				reflectPath: 'http://www.wearegoodfellaz.com/image_flow/',
-				/*reflections: false, 
-                reflectionP: 0.0,
-				imageScaling: false, */
-				imagesHeight: .67  });
+				onClick: function() {refreshGallery(eventNames.length - (instanceOne.imageID + 1))}, 				
+				preloadImages: false,
+				reflections: true,             
+				reflectionP: .1,
+				reflectPath: 'http://www.wearegoodfellaz.com/image_flow/',				
+				imageScaling: true, 
+				imagesM: .8,
+				imagesHeight: .75 });
 		});
 	
 	$().ready(function() {		
@@ -110,6 +121,16 @@
 					<h2>Select an Event</h2>
 					</div>
 					<div class="imageflow" id="eventmenu" height="300px">
+							<img src="images/event/polished_small.jpg" alt="Polished | Friday, August 24, 2012 @ Select Lounge" />							
+							<img src="images/event/body_language.jpg" alt="Body Language | Friday, August 17, 2012 @ Select Lounge" />
+							<img src="images/event/luau_two_small.jpg" alt="Luau 2 | Friday, August 3, 2012 @ Select Lounge" />							
+							<img src="images/event/sexy_dresses_small.jpg" alt="Sexy Dresses &amp; Stilettos | Friday, July 27, 2012 @ Select Lounge" />
+							<img src="images/event/inked_up_front_small.jpg" alt="Inked Up | Friday, July 20, 2012 @ Select Lounge" />								
+							<img src="images/event/carnival_small.jpg" alt="Euphoria | Friday, July 13, 2012 @ Select Lounge" />							
+							<img src="images/event/stars_and_stripes_small.jpg" alt="Stars and Stripes | Friday, July 6, 2012 @ Select Lounge" />							
+							<img src="images/event/fifth_element_small.jpg" alt="The 5th Element | Friday, June 29, 2012 @ Select Lounge" />
+							<img src="images/event/finesse_fridays_front_small.jpg" alt="Spring Finale | Friday, June 22, 2012 @ Select Lounge" />							
+							<img src="images/event/nicest_men_flyer_small.jpg" alt="The Nicest Men | Friday, June 15, 2012 @ Select Lounge" />							
 							<img src="images/event/luau_small.jpg" alt="The Luau | Friday, June 1, 2012 @ Select Lounge" />							
 							<img src="images/event/preakness_party_small.jpg" alt="Torrey Smith's Preakness Party | Friday, May 18, 2012 @ Select Lounge" />
 							<img src="images/event/remy_v_revel_small.jpg" alt="C'est la Vie #RemyVLaunch | Friday, May 4, 2012 @ Select Lounge" />
@@ -122,6 +143,7 @@
 							<img src="images/event/royal_small.jpg"  alt="Royal | Friday, February 3, 2012 @ Select Lounge" />
 							<img src="images/event/little_black_dress_small.jpg"  alt="Little Black Dress | Saturday, January 21, 2012 @ Select Lounge" />
 							<img src="images/event/xii_small.jpg"  alt="XII | Friday, January 6, 2012 @ Select Lounge" />
+	<!--							
 							<img src="images/event/naughty_n_nice_taa_front_small.jpg"  alt="Naughty and Nice | Saturday, December 17, 2011 @ Select Lounge" />
 							<img src="images/event/midnight_front_small.jpg"  alt="Midnight | Friday, December 2, 2011 @ Select Lounge" />
 							<img src="images/event/milestone_front_thumb.jpg"  alt="Milestone | Friday, November 4, 2011 @ Select Lounge" />
@@ -129,7 +151,8 @@
 							<img src="images/event/summer_salute_front_small.jpg" alt="Summer Salute | Friday, September 2, 2011 @ Select Lounge" />
 							<img src="images/event/venus_vs_mars_small.jpg" alt="Venus vs Mars | Saturday, August 20, 2011 @ Select Lounge" />
 							<img src="images/event/pastel_paradise_small.jpg" alt="Pastel Paradise | Friday, August 5, 2011 @ Select Lounge" />
-							<img src="images/event/my_first_small.jpg" alt="My First | Friday, July 1, 2011 @ Select Lounge" />
+							<img src="images/event/my_first_small.jpg" alt="My First | Friday, July 1, 2011 @ Select Lounge" /> 
+							-->
 
 					</div>
 					<div class="galleryMenuNote">					

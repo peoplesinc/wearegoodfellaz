@@ -14,7 +14,8 @@ body{
 
 	font-family:Georgia, "Times New Roman", Times, serif;
 
-	background: #fff;
+	background:  #000;
+	
 
 }
 
@@ -62,13 +63,13 @@ div.logoWrapper{
 
 
 div.contentWrapper{
-	width: 800px;
-	min-height: 630px;
-	
+	width: 1005px;
+	min-height: 780px;
+	height: 100%;
 	margin:  auto;
 	text-align: center;
-	background: url(../images/nicest_men/nicest_men_splash.png) bottom  center no-repeat;
-
+	background: #000 url(../images/finesse_museum_combo.jpg) top  center no-repeat;
+	
 }
 
 
@@ -137,7 +138,7 @@ img#main{
 
 
 div#enter{
-	margin-top: 300px;
+	padding-top: 300px; 
 	text-align:  center;
 	font-weight: bold;
 	
@@ -148,7 +149,7 @@ div#enter a.campaign{
 }
 
 div#enter a img{
-	height: 100px;	
+	height: 200px;	
 	
 }
 

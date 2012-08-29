@@ -9,15 +9,19 @@
 	<link type="text/css" rel="stylesheet" href="css/menu.css" />
 	
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
-	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js" ></script>
 	<script type="text/javascript" src="js/jqModal.js" ></script>
 	<script type="text/javascript" src="js/jquery.flip.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js" ></script>
+	
 	
 	<script type="text/javascript" src="jquery-lightbox/js/jquery.lightbox-0.5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery-lightbox/css/jquery.lightbox-0.5.css" media="screen" />
 
 	<!-- Scrolling DIV -->
 	<link rel="Stylesheet" type="text/css" href="SmoothDivScroll-1.1/css/smoothDivScroll.css" />
+
+	<link rel="Stylesheet" type="text/css" href="css/trontastic/jquery-ui-1.8.21.custom.css" />
 	
 	<!-- Smooth Div Scroll 1.1 - minified for faster loading-->
 	<script src="SmoothDivScroll-1.1/js/jquery.smoothDivScroll-1.1-min.js" type="text/javascript"></script>
@@ -37,31 +41,12 @@
 			});
 		 $('#rsvp').jqm({ ajax: './rsvp.html', trigger: 'a.rsvpTrigger1', closeClass: 'closeWrapper'});
 		 		 		 
-		 $('.flipFlyer').bind("click",function(){		
-			var elem = $(this).siblings(".flyerFront");		
-			if(elem.data('flipped')){
-				// If the element has already been flipped, use the revertFlip method
-				// defined by the plug-in to revert to the default state automatically:			
-				elem.revertFlip();								
-				// Unsetting the flag:
-				elem.data('flipped',false)
-			}else{
-				// Using the flip method defined by the plugin:				
-				elem.flip({
-					direction:'rl',
-					speed: 400,
-					onBefore: function(){
-						// Insert the contents of the .sponsorData div (hidden from view with display:none)
-						// into the clicked .sponsorFlip div before the flipping animation starts:						
-						elem.html(elem.siblings('.flyerReverse').html());
-					}
-				});
-				
-				// Setting the flag:
-				elem.data('flipped',true);
-			}
-			$('a.lightbox').lightBox();
-		});
+		$( ".accordion" ).accordion({ 
+		 collapsible: true ,		 
+		 autoHeight: false,
+		 active: false
+		  });
+		  $('.flyerSlideshow').cycle({fx: 'fade' 	});
 		 
 		});
 				
@@ -132,7 +117,7 @@
 					</div>		  
 				</div>
 					
-				<!-- Begin RSVP row -->
+					<!-- Begin RSVP row -->
 				<div id="middleRow">
 					<div id="rsvpInfo" class="horizontalRow">
 						<img class="mainImage" src="./images/rsvp_crystal_green.png" />
@@ -180,179 +165,242 @@
 				
 				
 				<!-- End RSVP Row -->
-				<div id="upcomingEvents">
 				
-					<!--
-					<div class="featured-content">
-						<div class="eventImages">	
-							<!--
-							<div class="flipFlyer" >
-								<img class="flip" src="images/flip_icon.png" title="See Reverse "/>
+				
+				
+				<div id="upcomingEvents">
+					<!-- Weekly Events -->
+					<div class="event weekly landscape">
+						<div class="images">
+							<div class="flyerSlideshow">
+								<img class="flyer" src="images/event/museum_front_small.jpg" />
+								<img class="flyer" src="images/event/museum_back_small.jpg" />
+									
 							</div>
-							
-							<div class="flyerFront">						
-							<a href="images/event/luau.jpg" rel="lightbox" class="lightbox" title="Finesse Fridays: The Luau">
-								<img class="flyer" src="images/event/luau_small.jpg" />
-							</a>
+							<div class="date"> <!-- Only for special events -->
+								Every Wednesday
 							</div>
-							
-							<!--
-							<div class="flyerReverse">			
-							<a href="images/event/remy_v_launch.jpg" rel="lightbox" class="lightbox" title="C'est la Vie: #RemyVLaunch">
-								<img class="flyer" src="images/event/remy_v_launch.jpg" />
-							</a>	
-							</div>
-							
-						</div>
-						<div class="contentText">	
-							<div class="eventTitle">The Luau: A 1st Fridays Event</div>															
-							<div class="textLine"><label>Hosts:</label><div class="text">Good Fellaz, Trix &amp; Zeke, and Overachieverz</div></div>
-							<div class="textLine"><label>Date:</label><div class="text">Friday, June 1, 2012</div></div>
-							<div class="textLine"><label>Time:</label><div class="text">9 PM to 2 AM</div></div>
-							<div class="textLine"><label>Where:</label><div class="text">Select Lounge, 415 N. Paca St
-								<a href="http://www.google.com/maps?q=415+North+Paca+Street,+Baltimore,+MD&hl=en&sll=37.0625,-95.677068&sspn=43.799322,93.076172&vpsrc=1&hnear=415+N+Paca+St,+Baltimore,+Maryland+21201&t=m&z=16" target="_blank">
-								<img class="icon" style="height: 20px; width: 20px; color: black; padding: 0px; margin: 0px;" src="images/google_maps_icon.png" /></a>
-							</div>
-							</div>
-							<div class="textLine">
-								<label>Perks:</label>
-								<div class="text">
-								<ul>
-									<li>Limbo Contest and complimentary Leis</li>
-									<li>Complimentary photography provided by <a href="http://spotlightimagery.com">spotlightimagery.com</a></li>
-									<li>FREE PASSES Available</li>
-								</ul>
+						</div>					
+						<div class="eventDetails">
+							<div class="eventTitle">Exhibit W | A Night at the Museum</div>			
+							<div class="accordion">
+								<h3><a href="#">Hosts</a></h3>
+								<div>Good Fellaz and Signature</div>
+								<h3><a href="#">Time</a></h3>
+								<div>5 PM to 12 AM</div>
+								<h3><a href="#">Location</a></h3>
+								<div>Museum Restaurant Lounge, 924 N. Charles St</div>
+								<h3><a href="#">DJ</a></h3>
+								<div>Special Guest DJ every week</div>
+								<h3><a href="#">Drink Specials</a></h3>
+								<div>
+									
+									<a href="./images/event/happy_hour_menu.jpg"  rel="lightbox" class="lightbox" title="Dinner Party Menu">
+										&gt;&gt; Happy Hour Menu &lt;&lt;
+									</a>							
+									
+									<ul>
+										<li>$6 Champagne Cocktails</li>
+										<li>$5 Moscato</li>
+										<li>$5 drinks: Martinis and Rail specials</li>
+										<li>1/2 off select appetizers 
+											<ul>
+												<li>Butterfly Shrimp</li>
+												<li>Wings</li>
+												<li>Chicken Tenders</li>											
+											</ul>										
+										</li>	
+										<li>$5 Sangria and wine</li>																				
+										<li>$7 Grey Goose*</li>
+										<li>$20 Sangria Pitchers</li>
+										* special runs all night																		
+									</ul>								
 								</div>
-							</div>	
-							<div class="textLine">
-								<label>Birthdays:</label><div class="text">Yours!</div>
-							</div>				
-							<div class="textLine">
-								<label>Tables:</label><div class="text">Email VIP@WeAreGoodFellaz.com to make table reservations.</div>
-							</div>
-							<div class="textLine">
-								<label>DJs:</label><div class="text">DJ PDrama hosted by BZ Barnes the voice of the city</div>
-							</div>
-
-							<div class="textLine rsvp">
-								<div class="rsvpLink"><a class="rsvpTrigger1" href="javascript:void(0);"><img src="./images/free_pass.png" /></a></div> 
-									<a href="./images/dresscode.jpg"  rel="lightbox" class="lightbox" title="Dress Code">
-								<img id="howToDress" src="./images/HowToDressV4.png" alt="How to Dress" />
-							</a>									
-							</div>
-						</div>						
-					</div>					
-					-->
-					
-					<!-- End event-->	
-					<div class="featured-content">
-					<div class="eventImages">
-						<div class="flipFlyer" >
-								<img class="flip" src="images/flip_icon.png" title="See Reverse "/>
-							</div>							
-							
-							<div class="flyerFront">						
-							<a href="images/nicest_men/nicest_men_flyer.jpg" rel="lightbox" class="lightbox" title="The Nicest Men">
-								<img class="flyer" src="images/nicest_men/nicest_men_flyer_small.jpg" />
-							</a>	
-							</div>
-							
-							<div class="flyerReverse">			
-							<a href="images/nicest_men/nicest_men_vik.jpg" rel="lightbox" class="lightbox" title="Birthday Celebration for Viki Valentine">
-								<img class="flyer" src="images/nicest_men/nicest_men_vik_small.jpg" />
-							</a>		
-							</div>
-						</div>
-						<div class="contentText">	
-							<div class="eventTitle">The Nicest Men: A Finesse Fridays Event</div>															
-							<div class="textLine"><label>Hosts:</label><div class="text">Good Fellaz and Trix &amp; Zeke </div></div>
-							<div class="textLine"><label>Date:</label><div class="text">Friday, June 15, 2012</div></div>
-							<div class="textLine"><label>Time:</label><div class="text">9 PM to 2 AM</div></div>
-							<div class="textLine"><label>Where:</label><div class="text">Select Lounge, 415 N. Paca St
-								<a href="http://www.google.com/maps?q=415+North+Paca+Street,+Baltimore,+MD&hl=en&sll=37.0625,-95.677068&sspn=43.799322,93.076172&vpsrc=1&hnear=415+N+Paca+St,+Baltimore,+Maryland+21201&t=m&z=16" target="_blank">
-								<img class="icon" style="height: 20px; width: 20px; color: black; padding: 0px; margin: 0px;" src="images/google_maps_icon.png" /></a>
-							</div>
-							</div>
-							<div class="textLine">
-								<label>Perks:</label>
-								<div class="text">
-								<ul>
-									<li>Hosted by Viki Valentine</li>
-									<li>Advance tickets available <a href="./nicest_men.html">here</a></li>																						
-									<li>Complimentary photography provided by <a href="http://spotlightimagery.com">spotlightimagery.com</a></li>
-								</ul>
-								</div>
-							</div>	
-							<div class="textLine">
-								<label>Birthdays:</label><div class="text">Good Fellaz' Own Reem and Shellz, Viki Valentine, and YOU!</div>
-							</div>				
-							<div class="textLine">
-								<label>Tables:</label><div class="text">Email VIP@WeAreGoodFellaz.com to make table reservations.</div>
-							</div>
-							<div class="textLine">
-								<label>DJs:</label><div class="text">DJ Eskada hosted by BZ Barnes the voice of the city</div>
-							</div>
-							<div class="textLine rsvp">
-								<div class="rsvpLink"><a class="rsvpTrigger1" href="javascript:void(0);"><img src="./images/free_pass.png" /></a></div> 
-									<a href="./images/dresscode.jpg"  rel="lightbox" class="lightbox" title="Dress Code">
-								<img id="howToDress" src="./images/HowToDressV4.png" alt="How to Dress" />
-							</a>									
-							</div>
-						</div>						
-					</div>	
-						<!-- End event-->	
-					<div class="featured-content">
-					<div class="eventImages">
-						<div class="flipFlyer" >
-								<img class="flip" src="images/flip_icon.png" title="See Reverse "/>
-							</div>							
-							
-							<div class="flyerFront">						
-							<a href="images/event/finesse_fridays_front.jpg" rel="lightbox" class="lightbox" title="Finesse Fridays">
-								<img class="flyer" src="images/event/finesse_fridays_front_small.jpg" />
-							</a>	
-							</div>
-							
-							<div class="flyerReverse">			
-							<a href="images/event/finesse_fridays_back.jpg" rel="lightbox" class="lightbox" title="Finesse Fridays">
-								<img class="flyer" src="images/event/finesse_fridays_front_small.jpg" />
-							</a>		
-							</div>
-						</div>
-						<div class="contentText">	
-							<div class="eventTitle">Finesse Fridays</div>															
-							<div class="textLine"><label>Hosts:</label><div class="text">Good Fellaz and Trix &amp; Zeke </div></div>
-							<div class="textLine"><label>Date:</label><div class="text">Every Friday</div></div>
-							<div class="textLine"><label>Time:</label><div class="text">9 PM to 2 AM</div></div>
-							<div class="textLine"><label>Where:</label><div class="text">Select Lounge, 415 N. Paca St
-								<a href="http://www.google.com/maps?q=415+North+Paca+Street,+Baltimore,+MD&hl=en&sll=37.0625,-95.677068&sspn=43.799322,93.076172&vpsrc=1&hnear=415+N+Paca+St,+Baltimore,+Maryland+21201&t=m&z=16" target="_blank">
-								<img class="icon" style="height: 20px; width: 20px; color: black; padding: 0px; margin: 0px;" src="images/google_maps_icon.png" /></a>
-							</div>
-							</div>
-							<div class="textLine">
-								<label>Perks:</label>
-								<div class="text">
-								<ul>
-									<li>FREE Birthday Celebrations</li>
-									<li>Table and Bottle Service Available</li>
-									<li>Weekly FREE Passes</li>					
-									<li>Valet Parking</li>																						
-									<li>Complimentary photography provided</li>
-								</ul>
-								</div>
-							</div>	
-							<div class="textLine">
-								<label>Tables:</label><div class="text">Email VIP@WeAreGoodFellaz.com to make table reservations.</div>
-							</div>							
-							<div class="textLine rsvp">								 
-									<a href="./images/dresscode.jpg"  rel="lightbox" class="lightbox" title="Dress Code">
-								<img id="howToDress" src="./images/HowToDressV4.png" alt="How to Dress" />
-							</a>									
-							</div>
-						</div>						
-					</div>	
-					<!-- End event-->	
 																
+								<h3><a href="#">Dinner Parties</a></h3>
+								<div>																																						
+									<a href="./images/event/dinner_party_menu.jpg"  rel="lightbox" class="lightbox" title="Dinner Party Menu">
+										&gt;&gt; Dinner Party Menu &lt;&lt;
+									</a>	
+									<ul>
+										<li>Appetizers
+											<ul>
+												<li>Calamari</li>
+												<li>Firecracker Prawns</li>
+												<li>Mixed Field Greens</li>
+												<li>Crab Tots</li>
+												<li>Mixed Field Greens</li>											
+											</ul>										
+										</li>
+										<li>Entree
+											<ul>
+												<li>Roasted Chicked Quarter</li>
+												<li>Filet Mignon (7 oz)</li>
+												<li>NY Strip (12 oz)</li>
+												<li>Shrimp Alfredo</li>
+												<li>Crab ball Spaghetti</li>											
+											</ul>										
+										</li>
+										<li>Dessert
+											<ul>
+												<li>Cheesecake trio (8 flavors)</li>																							
+											</ul>										
+										</li>
+																																							
+									</ul>	
+									<p>Contact us to make dinner party reservations. </p>
+								</div>
+														
+							</div>			
+						</div>
+					</div>					
+					<!-- END EVENT -->
+					<div class="divider"><img src="./images/divider.png" /></div>					
+					
+					
+					<div class="event weekly">
+						<div class="images">
+							<div class="flyer flyerSlideshow">
+							
+							<img class="flyer" src="images/event/finesse_fridays_front_small.jpg" />
+							<img class="flyer" src="images/event/finesse_fridays_back_small.jpg" />
+							</div>
+							<div class="date"> <!-- Only for special events -->
+								Every Friday
+							</div>
+						</div>					
+						<div class="eventDetails">
+							<div class="eventTitle">Finesse Fridays</div>			
+							<div class="accordion">
+								<h3><a href="#">FREE Passes</a></h3>
+								<div>
+									<form id="modalRsvpForm" action="https://madmimi.com/signups/subscribe/52166" target="_blank" method="post">									
+									<div class="emailForm">
+									<div class="formLine"><label for="signup_name">Name</label> <input id="signup_name" name="signup[name]" type="text" /></div>
+									<div class="formLine"><label for="signup_email">Email</label> <input id="signup_email" name="signup[email]" type="text" /></div>
+									</div>									
+									<div class="formButtons">
+										<input name="commit" class="button" type="image" src="./images/free_pass.png" value="FREE PASS" />
+									</div>
+									
+									</form>
+								</div>
+								<h3><a href="#">Hosts</a></h3>
+								<div>Good Fellaz and Trix & Zeke</div>
+								<h3><a href="#">Time</a></h3>
+								<div>9 PM to 2 AM</div>
+								<h3><a href="#">Location</a></h3>
+								<div>Select Lounge, 415 N. Paca St</div>			
+								<h3><a href="#">VIP</a></h3>
+								<div>Email VIP@WeAreGoodFellaz.com to make table reservations or celebrate your birthday.</div>									
+								<h3><a href="#">Perks</a></h3>
+								<div>	
+									<ul>
+										<li>FREE Passes available</li>																						
+										<li>Complimentary photography provided</li>
+									</ul>
+								</div>
+								<h3><a href="#">Dress Code</a></h3>
+								<div>	No Effort No Entry <br />
+									<a href="./images/dresscode.jpg"  rel="lightbox" class="lightbox" title="Dress Code">
+										<img id="howToDress" src="./images/HowToDressV4.png" alt="How to Dress" />
+									</a>	
+								</div>								
+							</div>			
+						</div>
+					</div>					
+					<!-- END EVENT -->																											
+					
+					<div class="divider"><img src="./images/divider.png" /></div>				
+					<div class="event">
+						<div class="images">						
+							<div class="flyer">							
+							<img class="flyer" src="images/event/finesse_fridays_front_small.jpg" />							
+							</div>
+							<div class="date"> <!-- Only for special events -->
+								Friday, August 31th
+							</div>
+						</div>					
+						<div class="eventDetails">
+							<div class="eventTitle">Kings and Queens: A Finesse Fridays Event</div>			
+							<div class="accordion">
+								<h3><a href="#">FREE Passes</a></h3>
+								<div>
+									<form id="modalRsvpForm" action="https://madmimi.com/signups/subscribe/52166" target="_blank" method="post">									
+									<div class="emailForm">
+									<div class="formLine"><label for="signup_name">Name</label> <input id="signup_name" name="signup[name]" type="text" /></div>
+									<div class="formLine"><label for="signup_email">Email</label> <input id="signup_email" name="signup[email]" type="text" /></div>
+									</div>									
+									<div class="formButtons">
+										<input name="commit" class="button" type="image" src="./images/free_pass.png" value="FREE PASS" />
+									</div>
+									
+									</form>
+								</div>
+								<h3><a href="#">Hosts</a></h3>
+								<div>Good Fellaz and Trix &amp; Zeke</div>
+								<h3><a href="#">Date</a></h3>
+								<div>Friday, August 31, 2012 <br />9 PM to 2 AM</div>
+								<h3><a href="#">Location</a></h3>
+								<div>Select Lounge, 415 N. Paca St</div>
+								<h3><a href="#">DJ and MC</a></h3>
+								<div>TBD</div>
+								<h3><a href="#">Birthdays</a></h3>
+								<div>Jessica, Miah, Mya, ALL Virgos and YOU!</div>
+								<h3><a href="#">Perks</a></h3>
+								<div>	
+									<ul>												
+										<li>FREE Passes available</li>																						
+										<li>Complimentary photography provided</li>
+									</ul>
+								</div>
+								<h3><a href="#">Dress Code</a></h3>
+								<div>										
+									<a href="./images/dresscode.jpg"  rel="lightbox" class="lightbox" title="Dress Code">
+										<img id="howToDress" src="./images/HowToDressV4.png" alt="How to Dress" />
+									</a>	
+								</div>								
+							</div>			
+						</div>
+					</div>					
+					<!-- END EVENT -->
+					
+					<div class="divider"><img src="./images/divider.png" /></div>				
+					<div class="event landscape">
+						<div class="images">						
+							<div class="flyer">							
+							<img class="flyer" src="images/event/endless_summer.jpg" />							
+							</div>
+							<div class="date"> <!-- Only for special events -->
+								Saturday, September 1st
+							</div>
+						</div>					
+						<div class="eventDetails">
+							<div class="eventTitle">Endless Summer: The Day Party Finale</div>			
+							<div class="accordion">
+								<h3><a href="#">Hosts</a></h3>
+								<div>Good Fellaz, Trix &amp; Zeke, DeJuan DHov</div>
+								<h3><a href="#">Date</a></h3>
+								<div>Saturday, September 1, 2012 <br />3 PM to 7 PM</div>
+								<h3><a href="#">Location</a></h3>
+								<div>Red Maple, 930 N. Charles St</div>
+								<h3><a href="#">DJ and MC</a></h3>
+								<div>TBD</div>
+								<h3><a href="#">Birthdays</a></h3>
+								<div>ALL Virgos and YOU!</div>
+								<h3><a href="#">Perks</a></h3>
+								<div>	
+									<ul>												
+										<li>Half Price admission before 5 PM</li>																																
+										<li>Complimentary photography provided</li>
+									</ul>
+								</div>															
+							</div>			
+						</div>
+					</div>					
+					<!-- END EVENT -->					
+					
+					<!-- Special Events -->										
 				</div><!-- End upcoming Events -->													
 			</div><!-- End Left Panel -->																	
 		<div id="footer">Copyright Driven Entities, LLC</div>
@@ -375,3 +423,4 @@
 		</script>
   </body>
 </html>
+

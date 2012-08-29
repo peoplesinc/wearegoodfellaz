@@ -16,16 +16,13 @@
 	 	<body>
 
 <div id="middleColumn">
+<!--
 	<div class="logoWrapper"><img id="logo" src="images/good-fellaz-trans.png" title="Good Fellaz" /></div>
-	<div class="contentWrapper">
-		<div class="title"><img src="images/nicest_men/title.png" /></div>
-	<!--	<div class="subTitle"><img src="images/nicest_men/date.png" /></div> -->
-		<div id="enter">
-			<a href="./nicest_men.html" class="campaign">
-				<img style="display: none" src="images/nicest_men/enter_campaign.png" alt="Click to Enter" />
-			</a>
+	-->
+	<div class="contentWrapper">	
+		<div id="enter">			
 			<a href="./full.html">
-				<img style="display: none" src="images/nicest_men/enter_site.png" alt="Click to Enter" />
+				<img style="display: none" src="images/enter.png" alt="Click to Enter" />
 			</a>
 		</div>
 	</div>

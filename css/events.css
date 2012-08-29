@@ -69,7 +69,7 @@ div#middleRow{
 	border-radius: 15px;
 	background: #000 url("../images/remy/remy_v_red.jpg") bottom center no-repeat;
 	color: white;
-	padding: 15px 0 0 10px;
+	padding: 15px 0 0 0px;
 	font-size: 16px;
 }
 
@@ -136,99 +136,67 @@ div#tableInfo{
 
 /* Upcoming events */
 div#upcomingEvents{
-/* width: 700px; 
- padding: 10px;
- height: 900px; */
-}
 
-div.featured-content{
- width: 942px;
-*display: inline;
-display: inline-block;
- zoom: 1;
- margin: 15px 0; 
- font-size: 18px;
+ margin: 25px 0 0 0;
+ background: #000 url(../images/BrushedMetal2.jpg);
+ 	border: #ccc 1px solid;
+	border-radius: 10px;
+	width: 100%;
 }
 
 
 
-div.featured-content ul{
-margin: 7px 0 5px 10px
-}
-div.featured-content li{
-	margin-left: 7px;
+.flyerReverse{
+	display: none;
 }
 
-
-div.featured-content div.contentText{
-  *display: inline;
-  zoom: 1;
-  display: inline-block; 
-  width: 575px;
-  text-align: left;
-  padding: 10px;
-  height: 100%; 
-  min-height: 400px;   
-  background: #fff url("../images/headline_bg.jpg") top left repeat;
-  border: 2px #000 solid;
-  border-radius: 15px;
-  margin: 0  0 0 22px;
-  vertical-align: top;
+img.howToDress{
+	height: 50px;
 }
 
-div.contentText div.eventTitle{
-	font-size:24px;
-	font-style:italic;
-	font-weight:bold;
-	border-bottom: 1px #ccc solid;
-}
-/* NEW STYING for Events Page */
+/* NEW CSS */
+div#upcomingEvents .event{
+	padding: 10px;
+	/* background: #000 url(../images/BrushedMetal2.jpg); */
 
-div.contentText div.text{
+}
+
+div#upcomingEvents .images{
+	width: 40%;
 	display: inline-block;
-	width: 450px;
-	vertical-align:top;
 	*display: inline;
-	zoom: 1;
-}
-
-div.contentText label{
-	vertical-align:top;
-	display: inline-block;
-	width: 100px;
-	color: #008000;
-	font-weight:bold;
-	margin-right: 6px;
-	*display: inline;
-	zoom: 1;
-}
-
-div.featured-content div.contentText div.textLine{
- padding: 3px;
-}
-
-div.featured-content div.contentText div.textLine.rsvp .rsvpLink {
- width: 90%;
- display: inline-block;
- *display: inline;
  zoom: 1;
 }
 
-div.featured-content div.contentText div.textLine.rsvp img{
- height: 50px;
-}
-
-
-div.featured-content div.eventImages{
- display: inline-block; 
- *display: inline;
+div#upcomingEvents .eventDetails{
+	width: 59%;
+		display: inline-block;
+		vertical-align: top;	
+		*display: inline;
  zoom: 1;
- height: 100%;
- width: 275px;
- margin: 10px; 
 }
 
-div.eventImages div.flipFlyer{
+
+div#upcomingEvents .event.landscape .images{
+	width: 50%;
+	
+}
+
+div#upcomingEvents .event.landscape .eventDetails{
+	width: 49%;	
+}
+
+div#upcomingEvents .eventDetails h3{	
+		text-align: right;
+}
+
+.formButtons input.button{
+ height: 65px;
+}
+
+
+
+div#upcomingEvents .images div.flipFlyer{
  display: inline-block; 
  *display: inline;
  zoom: 1;
@@ -236,11 +204,11 @@ width: 100%;
 text-align:right;
 }
 
-div.featured-content div.eventImages img.flyer{
+div#upcomingEvents .images img.flyer{
   margin-bottom: 15px;
-  max-width: 550px;
+  max-width: 450px;
   max-height: 400px;
-  width: 100%;
+  
   border: 1px #000 solid;
   margin: auto;
 }
@@ -250,22 +218,48 @@ div.featured-content div.eventImages img.flip{
   cursor:pointer;
 }
 
-/*
-div.eventImages div.flyerFront {
- background: red;
+div.emailForm{
+ display: inline-block;
+ vertical-align: top;
+ *display: inline;
+ zoom: 1;
 }
 
-div.eventImages div.flyerReverse{
- background: red;
-}
-*/
-
-
-
-.flyerReverse{
-	display: none;
+div.formButtons{
+	width: 120px;
+	display: inline-block;
+	*display: inline;
+ zoom: 1;
 }
 
-img#howToDress{
-	height: 50px;
+
+div#upcomingEvents div.eventTitle{
+	font-size:24px;
+	font-style:italic;
+	font-weight:bold;
+	border-bottom: 1px #ccc solid;
+	margin: 5px 0;
+	color: white;
+}
+
+div#upcomingEvents div.date{
+	font-size:24px;
+	font-style:italic;
+	font-weight:bold;
+	
+	margin: 5px 0;
+	color: white;
+}
+
+div.flyerSlideshow{
+	margin: 0 auto;	
+}
+
+div.eventDetails ul, div.eventDetails li{
+	margin: 0 0 0 5px;
+	text-align: left;
+}
+
+div.eventDetails p{
+	margin: 5px 0;	
 }

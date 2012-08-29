@@ -3,6 +3,7 @@
 <html>
   <head>
 	 <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
 	<title>Good Fellaz :: Baltimore's nightlife professionals</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 	<link type="text/css" rel="stylesheet" href="css/video.css" />
@@ -26,8 +27,10 @@
 	videos[3] = { title: 'Pardi Gras', url: 'http://player.vimeo.com/video/37663523?title=0&amp;byline=0&amp;portrait=0'};
 	videos[4] = { title: 'Refresh', url: 'http://player.vimeo.com/video/38448782?title=0&amp;byline=0&amp;portrait=0'};
 	videos[5] = { title: 'The Nicest Men Pt. 1', url: 'http://player.vimeo.com/video/41527155?title=0&amp;byline=0&amp;portrait=0'};
-    videos[6] = { title: 'Remy V Launch', url: 'http://player.vimeo.com/video/42420524?title=0&amp;byline=0&amp;portrait=0'};
+   	videos[6] = { title: 'Remy V Launch', url: 'http://player.vimeo.com/video/42420524?title=0&amp;byline=0&amp;portrait=0'};
 	videos[7] = { title: 'The Nicest Men Pt. 2', url: 'http://player.vimeo.com/video/43665598?title=0&amp;byline=0&amp;portrait=0'};
+	videos[8] = { title: 'Select Lounge Fridays', url: 'http://player.vimeo.com/video/44325934?title=0&amp;byline=0&amp;portrait=0'};
+	videos[9] = { title: 'Brand New', url: 'http://player.vimeo.com/video/44794146?title=0&amp;byline=0&amp;portrait=0'};
 
 	function loadVideo(index){
 		$('#title').text(videos[index].title);
@@ -35,7 +38,7 @@
 	}
 
 	$().ready(function() {
-  		loadVideo(7);
+  		loadVideo(9);
 	});
 
 	</script>
@@ -63,6 +66,8 @@
 <div id="tvWrapper"><!-- Iframe for swapping --> <iframe id="tv" src="./index.html" scrollbars="no" width="428" height="250" frameborder="0"></iframe></div>
 <div id="channels">
 <h2 class="title">Videos</h2>
+<div class="video"><a href="javascript:loadVideo(9);"><img src="./images/video/brand_new.jpg" /><br />Brand New @ Red Maple</a></div>
+<div class="video"><a href="javascript:loadVideo(8);"><img src="./images/video/select_fridays.jpg" /><br />Finesse Fridays</a></div>
 <div class="video"><a href="javascript:loadVideo(7);"><img src="./images/video/nicest_men_2.jpg" /><br />The Nicest Men Pt. 2</a></div>
 <div class="video"><a href="javascript:loadVideo(6);"><img src="./images/video/remy_launch.jpg" /><br />Remy V Launch @ Select Lounge</a></div>
 <div class="video"><a href="javascript:loadVideo(5);"><img src="./images/video/mim_1.jpg" /><br />The Nicest Men I</a></div>

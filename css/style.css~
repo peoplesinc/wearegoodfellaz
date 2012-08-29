@@ -5,7 +5,7 @@
 }
 
 body{
- background: #E0DFDB url('../images/Two_1.jpg') ;  
+ background: #000  url('../images/Two_1.jpg') ;  
   margin-top: 0px;
   margin-bottom: 20px;
   text-align: center;
@@ -92,14 +92,14 @@ color: black;
 div#featured {
  	/*background: #fff;
     border: 1px solid #999999; */
-    height: 350px;
+/*    height: 380px; */
     width: 980px; 
     margin: 10px auto 0 auto;
 	text-align:center;
 }
 
 div#featured-container{
-  height: 330px;
+/*  height: 440px; */
   text-align: center;
 }
 
@@ -175,7 +175,7 @@ div#rightPanel{
 
 div#mailSignup{
  border: 1px #999 solid;
- margin: 15px 0px 10px 0px;
+/* margin: 15px 0px 10px 0px; */
  color:#4aed05;
  background-color: black;
 /* border-radius: 10px; */
@@ -223,7 +223,7 @@ cursor: pointer; /* cursor: hand; for IE5 */
 }
 
 div#fbPlugin{
- margin-top: 10px;
+/*  margin-top: 10px; */
  background-color:#000000;
 }
 
