@@ -68,7 +68,8 @@ div.contentWrapper{
 	height: 100%;
 	margin:  auto;
 	text-align: center;
-	background: #000 url(../images/finesse_museum_combo.jpg) top  center no-repeat;
+	#background: #000 url(../images/fnl_museum_combo.jpg) top  center no-repeat;
+	background: #000 url(../images/event/NYE_remy.jpeg) top  center no-repeat;
 	
 }
 
@@ -138,7 +139,7 @@ img#main{
 
 
 div#enter{
-	padding-top: 300px; 
+	padding-top: 370px; 
 	text-align:  center;
 	font-weight: bold;
 	

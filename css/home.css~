@@ -1,0 +1,216 @@
+/* Changes to Common */
+div#content{
+  background: none;
+}
+
+div#leftPanel{
+	 width: 690px; 
+
+	background: #000;
+	border: none;
+	
+}
+
+h2.eventTitle{
+	color: #000;!important
+}
+
+/* Email RSVP Forms */
+div.eventSummary{
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+div#featured-container div.formButtons input{
+	color: #4AED05;
+/* 	background-color: #000; */
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px none;
+	width: 80px;
+/*	height: 25px; */
+}
+
+
+/* End RSVP */
+div.headlines{
+background: url(../images/BrushedMetal2.jpg);
+width: 680px;
+margin: 5px auto;
+}
+
+
+div.month img.monthGraphic{
+	margin: auto;
+}
+
+
+div.headline-month{
+ text-align:left;
+}
+
+div.headline-month div.month{
+	width: 150px;
+	display: inline-block;
+	text-align:center;
+	padding: 25px 0 0 0;
+/*	height: 100%; */
+	color: white;
+	margin: auto;
+}
+
+div.headline-month div.events{
+	display: inline-block;
+	vertical-align:top;
+	padding: 3px;
+	width: 500px;
+}
+
+
+div.headline-month div.events .event{
+	display: inline-block;
+	vertical-align:top;
+	width: 155px; 
+	height: 200px;
+	font-size: 16px;
+	background: url(../images/calendar_bg_blck.png);
+}
+
+div.headline-month div.events .event.internal{
+	background: url(../images/calendar_bg_green.png);
+}
+
+div.headline-month div.events .event .dayOfWeek{
+	display: inline-block;
+	width: 35%;
+	text-align:left;
+	color: #4AED05;
+	font-size:20px;
+	padding: 0 0 0 10px;
+}
+
+div.headline-month div.events .event.internal .dayOfWeek{
+	color: black;
+}
+
+div.headline-month div.events .event .date{
+	display: inline-block;
+	width: 40%;
+	font-size: 32px;
+	text-align:right;
+	color: white;
+}
+
+div.headline-month div.events .event .date.range{
+	font-size: 22px;
+}
+
+
+div.headline-month div.events .event .title{
+	height: 160px;
+	vertical-align: bottom;
+	padding: 30px 0 0 0;
+	width: 80%;
+	margin: 0 0 0 10px;
+}
+
+div.divider {
+	margin: 12px 0;
+}
+
+div.divider img{
+	width: 150px;
+}
+
+
+div.headline-event{
+ text-align: left;
+ padding: 5px;
+/* background: #ccc; */
+ margin: 2px;
+ min-height: 120px;
+ background: white url("../images/headline_bg.jpg") top left repeat-x;
+ /*border: 1px #ccc solid;
+ border-radius: 15px;*/
+}
+
+div.headline-event.internal{
+ background: black url("../images/black_headline_bg.jpg") bottom right no-repeat;
+ color: white;
+}
+
+div.headline-event.remy{
+ background: white url("../images/remy/remy_v_box_top_small.png") bottom right no-repeat;
+ color: black;
+}
+
+div.headline-event.internal a,  div.headline-event.internal a:visited{
+	color: #4AED05;
+}
+
+div.headline-event.internal div.event-title a:hover{
+	color: #fff;
+}
+
+div.headline-event div.event-date{
+	display: inline-block;
+	width: 49%;
+	*display: inline;
+	zoom: 1;
+}
+
+div.headline-event div.event-title{
+	font-size: 19px;
+	font-weight: bold;
+	border-bottom: 1px #ccc solid;
+}
+
+
+
+div.headline-event.internal div.event-title{
+ color: #4AED05;
+}
+
+div.headline-event div.event-time{
+	display: inline-block;
+	width: 49%;
+	text-align: right;
+	*display: inline;
+	zoom: 1;
+}
+
+div.headline-event div.event-location{
+	font-style:italic;	
+	margin-left: 10px;
+}
+
+div.headline-event div.event-details{
+	margin: 10px 0;
+	display: inline-block;
+	width: 70%;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
+}
+
+div.headline-event div.rsvp{	
+	text-align: right;
+	display: inline-block;
+	width: 27%;
+	*display: inline;
+	zoom: 1;
+}
+
+
+div.headline-event div.rsvp img{	
+	height: 50px;
+}
+
+div#ad{
+	/* padding: 0 0 10px 0; */
+}
+
+div#ad img{
+	width: 280px;
+	height: 325px;
+}

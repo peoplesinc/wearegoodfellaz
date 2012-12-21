@@ -80,6 +80,11 @@ div.headline-month div.events .event.internal{
 	background: url(../images/calendar_bg_green.png);
 }
 
+div.headline-month div.events .event.bc{
+	background: url(../images/calendar_bg_pink.png);
+	
+}
+
 div.headline-month div.events .event .dayOfWeek{
 	display: inline-block;
 	width: 35%;
@@ -93,6 +98,10 @@ div.headline-month div.events .event.internal .dayOfWeek{
 	color: black;
 }
 
+div.headline-month div.events .event.bc .dayOfWeek{
+	color: black;
+}
+
 div.headline-month div.events .event .date{
 	display: inline-block;
 	width: 40%;
@@ -101,6 +110,9 @@ div.headline-month div.events .event .date{
 	color: white;
 }
 
+div.headline-month div.events .event .date.range{
+	font-size: 23px;
+}
 
 
 div.headline-month div.events .event .title{

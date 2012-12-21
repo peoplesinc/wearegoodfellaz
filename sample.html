@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html>
+	  	<head>
+	  		<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+			<title>Good Fellaz :: Baltimore's nightlife professionals</title>		
+			<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+			<script>
+			
+			$(document).ready(function() {
+					$('.section').click(function() {
+							toggleSection($(this).attr("id"));
+					});
+				});			
+			
+			var originalHeight = 0;
+			var originalWidth = 0; 				
+			var zoom = false;
+			var sectionId = '';
+
+			function toggleSection(id){
+				if(!zoom ){
+					zoomSection(id);	
+					zoom = true;			
+				}else{
+					resetSection(id);
+					zoom = false;				
+				}			
+			}
+
+			
+			function zoomSection(id){
+				jId = '#' + id;
+				currentSection = $(jId);				
+				originalHeight = currentSection.height();
+				originalWidth = currentSection.width();				
+			
+			
+				$(".section:not(#" + id +")").fadeOut(250, function(){
+					$(jId).animate({
+   	 				width: '100%',
+    					height: '450px'
+  					}, 500);  				  							
+				});								
+			}
+			
+			function resetSection(id){
+				$('#' + id).animate({
+					width: originalWidth,
+					height: originalHeight
+				}, 500, function(){
+					$(".section:not(#" + id +")").fadeIn(250);
+				});				
+		
+			}			
+			
+			
+				
+			</script> 
+			<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+
+			body{
+				color: black;
+				font-family:Georgia, "Times New Roman", Times, serif;
+				background:  #000;
+				text-align: center;	
+			}
+
+			a, a:visited, a:active{		
+				text-decoration: none;
+				outline: none;
+				color: red;
+				border: none;	
+			}
+
+			a:hover{
+				text-decoration: none;
+				outline: none;
+ 				color: none;	
+ 				border: 0;
+			}
+			
+			#wrapper{
+					width: 980px;
+					padding: 3px;		
+			}				
+						
+			#wrapper .section{
+				/* display: inline-block; */
+				float: left; 
+				
+				min-width: 326px;
+				min-height: 150px;
+				margin: 0 auto;
+			}
+
+			#rsvp{
+					background-color: blue;
+					height: 300px;
+					
+			}			
+			
+			#birthdays{
+					background-color: yellow;
+					width: 654px;		
+			}			
+			
+			#vip{
+					background-color: green;
+					width: 328px;		
+			}			
+			
+			#happyHour{
+					background-color: gray;	
+					height: 300px;
+					float: right!important;						
+			}			
+			
+			#dinnerParty{
+					background-color: purple;	
+					width: 654px;	
+					float: right!important;
+			}						
+			
+			</style>
+	 	 </head>
+	 	<body>
+
+<div id="wrapper">
+	<div id="rsvp" class="section">RSVP</div>
+	<div id="birthdays" class="section">Birthdays</div>
+	<div id="vip" class="section">VIP</div>	
+
+	<div id="happyHour" class="section">Happy Hour</div>
+<div id="dinnerParty" class="section">Dinner Parties</div>			
+</div>
+
+</body>
+</html>

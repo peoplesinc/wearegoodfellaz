@@ -27,10 +27,13 @@
 	videos[3] = { title: 'Pardi Gras', url: 'http://player.vimeo.com/video/37663523?title=0&amp;byline=0&amp;portrait=0'};
 	videos[4] = { title: 'Refresh', url: 'http://player.vimeo.com/video/38448782?title=0&amp;byline=0&amp;portrait=0'};
 	videos[5] = { title: 'The Nicest Men Pt. 1', url: 'http://player.vimeo.com/video/41527155?title=0&amp;byline=0&amp;portrait=0'};
-   	videos[6] = { title: 'Remy V Launch', url: 'http://player.vimeo.com/video/42420524?title=0&amp;byline=0&amp;portrait=0'};
+   videos[6] = { title: 'Remy V Launch', url: 'http://player.vimeo.com/video/42420524?title=0&amp;byline=0&amp;portrait=0'};
 	videos[7] = { title: 'The Nicest Men Pt. 2', url: 'http://player.vimeo.com/video/43665598?title=0&amp;byline=0&amp;portrait=0'};
 	videos[8] = { title: 'Select Lounge Fridays', url: 'http://player.vimeo.com/video/44325934?title=0&amp;byline=0&amp;portrait=0'};
 	videos[9] = { title: 'Brand New', url: 'http://player.vimeo.com/video/44794146?title=0&amp;byline=0&amp;portrait=0'};
+   videos[10] = { title: 'Cognac Chronicle II', url: 'http://player.vimeo.com/video/50048318?title=0&amp;byline=0&amp;portrait=0'};
+   videos[11] = { title: 'Express Pass Intro', url: 'http://www.youtube.com/embed/Vf3omnC9clE'};
+   videos[12] = { title: 'Remy CRUsade', url: 'http://player.vimeo.com/video/54045659?badge=0'};
 
 	function loadVideo(index){
 		$('#title').text(videos[index].title);
@@ -38,7 +41,7 @@
 	}
 
 	$().ready(function() {
-  		loadVideo(9);
+  		loadVideo(12);
 	});
 
 	</script>
@@ -49,7 +52,7 @@
 <div id="banner">
 <div id="banner-emblem"><img src="images/good-fellaz-trans.png" alt="Good Fellaz" /></div>
 </div>
-<div id="menu"><nav id="globalheader" class="globalheader-js noinset ios3 globalheader-loaded globalheader-loaded"> 
+<div id="menu"><nav id="globalheader" class="globalheader-js noinset ios3 globalheader-loaded globalheader-loaded">
 <ul id="globalnav" class="nosearch" role="navigation">
 <li id="menu-home"><a href="full.html"><span>Home</span></a></li>
 <li id="menu-events"><a href="events.html"><span>Events</span></a></li>
@@ -63,9 +66,12 @@
 <div id="content">
 <div id="leftPanel">
 <div id="heading">Now Playing: <span id="title"></span></div>
-<div id="tvWrapper"><!-- Iframe for swapping --> <iframe id="tv" src="./index.html" scrollbars="no" width="428" height="250" frameborder="0"></iframe></div>
+<div id="tvWrapper"><!-- Iframe for swapping --> <iframe id="tv" src="./index.html" scrollbars="no" width="428" height="250" frameborder="0" allowfullscreen webkitAllowFullScreen mozallowfullscreen></iframe></div>
 <div id="channels">
 <h2 class="title">Videos</h2>
+<div class="video"><a href="javascript:loadVideo(12);"><img src="./images/video/remy_crusade.jpg" /><br />#RemyCRUsade</a></div>
+<div class="video"><a href="javascript:loadVideo(11);"><img src="./images/video/express_pass.jpg" /><br />Express Pass Intro</a></div>
+<div class="video"><a href="javascript:loadVideo(10);"><img src="./images/video/cognac_chronicles_two.jpg" /><br />Cognac Chronicles II</a></div>
 <div class="video"><a href="javascript:loadVideo(9);"><img src="./images/video/brand_new.jpg" /><br />Brand New @ Red Maple</a></div>
 <div class="video"><a href="javascript:loadVideo(8);"><img src="./images/video/select_fridays.jpg" /><br />Finesse Fridays</a></div>
 <div class="video"><a href="javascript:loadVideo(7);"><img src="./images/video/nicest_men_2.jpg" /><br />The Nicest Men Pt. 2</a></div>

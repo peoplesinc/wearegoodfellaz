@@ -23,7 +23,20 @@ $event = $_GET["event"];
     }
 
     // construct events
-   $events['the_professional'] =  new Event("Polished | The Profressional| 8/24 @ Select Lounge",'images/event/the_professional/');
+   $events['noir'] =  new Event("Noir | 12/7 @ Select Lounge",'images/event/noir/');
+   $events['black_friday'] =  new Event("Black Friday | 11/23 @ Select Lounge",'images/event/black_friday/');
+   $events['remy_crusade'] =  new Event("Remy CRUsade | 11/16 @ Select Lounge",'images/event/remy_crusade/');
+   $events['cuffed'] =  new Event("Cuffed | 11/9 @ Select Lounge",'images/event/cuffed/');
+   $events['golden_standard'] =  new Event("Golden Standard with Mehgan James | 11/2 @ Select Lounge",'images/event/golden_standard/');
+   $events['gentleman_affair'] =  new Event("Gentleman's affair| Friday 10/26 @ Select Lounge",'images/event/gentleman_affair/');
+   $events['rosa_acosta'] =  new Event("Friday Night Lights with Rosa Acosta | Friday 10/19 @ Select Lounge",'images/event/rosa_acosta/');
+   $events['exhibitw'] =  new Event("Exhibit Wednesdays | Wednesdays @ Museum Lounge",'images/event/exhibit_wednesdays/');
+	$events['fiesta'] =  new Event("Fiesta | 10/5 @ Select Lounge",'images/event/fiesta/');
+	$events['royal_flush'] =  new Event("Royal Flush | 9/21 @ Select Lounge",'images/event/royal_flush/');
+	$events['finesse'] =  new Event("Finesse | 9/14 @ Select Lounge",'images/event/finesse/');	
+	$events['80s_vs_90s'] =  new Event("80s Babies vs 90s babies | 9/7 @ Select Lounge",'images/event/80s_vs_90s/');	
+	$events['kings_and_queens'] =  new Event("Kings and Queens | 8/31 @ Select Lounge",'images/event/kings_and_queens/');   
+   $events['the_professional'] =  new Event("Polished | The Professional| 8/24 @ Select Lounge",'images/event/the_professional/');
 	$events['body_language'] =  new Event("Body Language| 8/17 @ Select Lounge",'images/event/body_language/');
 	$events['luau_2'] =  new Event("Luau 2 | 8/3 @ Select Lounge",'images/event/luau_2/');   
    $events['tight_dresses'] =  new Event("Sexy Dresses &amp; Stilettos | 7/27 @ Select Lounge",'images/event/tight_dresses/');	
